@@ -1,0 +1,88 @@
+,value,sorting,period,base,logogram,morpheme_1,morpheme_2,morpheme_3,sense_hk,certainty-weight_hk,sense_hk_qid,certainty-weight_MEGA,sense_MEGA_qid,POS,number,person,category,transliteration original
+560,['ut'],s~uutkime,mE,šutki.me,,-me;3sg.inan,,,bei Nacht,1,,,,adverb,,,ADJ,šu-<ut>-ki-me
+561,['ut'],s~uutkime,mE,šut,,,,,,,,1.0,,noun,,,ADJ,šu-<ut>-ki-me
+562,['ut'],s~uutkime,mE,ki,,,,,,,,1.0,,noun,,,ADJ,šu-<ut>-ki-me
+596,['za'],zabarya,mE,zubar,,-ya;adj,,,aus Kupfer,1,,,,noun,,,ADJ,<za>-bar-ya
+681,['X'],abuuls~ati,mE,,,,,,0,0.5,,,,noun,SG,1.0,Noun,a-bu-ul.ša-ti-[x]
+684,['da'],adda(),achE,0,,,,,Futter,0.5,fodder (Q211439),,,noun,,,Noun,ad-da(?)
+870,['X'],asapunaibbe,nE,GN (?),,-p; 3pl.an,,,Leute aus A.,0.5,people (Q5),,,noun,,,Noun,[h.]a-sa?-[x]-pu-na?-ib-be
+1294,['X'],biut,nE,,,,,,Vermögen,,asset (Q46737),,,noun,,,Noun,h.pi-ut?-[x]
+1484,['X'],damunaip,achE,,,,,,,,,,,noun,PL,3.0,Noun,hh.da-mu-[x]-na-ip?
+1488,['X'],dankas~,achE,,,,,,,,,,,noun,,,Noun,tan-kaš-[x]
+2031,['X'],gamma,achE,,,,,,Kennzeichnung von Obstbaumsetzlingen,,,,,noun,,,Noun,kam?-ma?-x
+3191,"['X', 'X']",izzay,achE,,,,,,Berufsbezeichnung,,,,,noun,,,Noun,hh.iz-za-x-[y]
+3427,['ki'],maans~aarki,mE,,,,,,siebter Monat,,,,,noun,,,Noun,ma-an-šá-ar-<ki>
+4628,['X'],uls~uhu,nE,,,,,,Bezeichnung eines wahrscheinlich weiblichen Kleidungsstückes,,,,,noun,,,Noun,ul-šu-hu-[x]
+4670,['ti'],urkutira,achE,,Sum,,,,Hundewart,,,,,noun,,,Noun,UR.lg.ku-<ti>-ra
+4671,['ti'],urkutira,achE,kuti,,-r; 3sg.an,,,Hundewart,,,,,noun,,,Noun,UR.lg.ku-<ti>-ra
+5018,['pi'],bi+pir,mE,,,,,,,,,,,verb,,,Verb,PI+PÍR
+5414,"['X', 'X']",eyis~,achE,,,,,,,,,,,verb,,,Verb,e-[x-y]-iš
+6155,['ri'],marris~a,achE,,,,,,,,,,,verb,,,Verb,mar-<ri>-šá
+6898,['X'],buulma,oE,,,,,,,,,,,other,,,other,bu-ul-ma-x
+7309,['X'],denumi,mE,,,,,,,,,,,other,,,other,te-nu-mi-x
+7312,['X'],demukuun,achE,,,,,,,,,,,other,,,other,te?-mu?-ku?-[x]-un?
+7325,['X'],dinniapri,nE,,,,,,,,,,,other,,,other,tin?-ni-[x]-ap-ri
+7486,['hh'],is~ba,achE,,,,,,,,,,,PN,,,PN,<hh>.iš-ba
+7826,['ut'],simuutbaas~ti,oE,,,,,,,,,,,PN,,,PN,d.si-mu-<ut>.ba-aš-ti
+7837,['X'],s~imuuts~ar,oE,,,,,,,,,,,PN,,,PN,d.ši-mu-ut.šar-x
+7973,['X'],bana,achE,,,,,,,,,,,PN,,,PN,f.ba-na-[x]
+8150,['X'],dakmibar,achE,,,,,,,,,,,PN,,,PN,f.tak-mi-bar?-x
+8189,['X'],ukbeririya,achE,,,,,,,,,,,PN,,,PN,f.uk-be-ri-[x]-ri?-ya
+8271,['X'],haalludiis~,oE,,,,,,,,,,,PN,,,PN,ha-al.lu-di-iš-[x]
+8569,"['X', 'X']",attina,achE,,,,,,,,,,,PN,,,PN,hh.at-ti-[x-x]-na
+8582,"['X', 'X']",bayda,achE,,,,,,,,,,,PN,,,PN,hh.ba-[x-y]-da
+8583,['X'],bama,achE,,,,,,,,,,,PN,,,PN,hh.ba-[x]-ma
+8602,"['X', 'X']",babaatyna,achE,,,,,,,,,,,PN,,,PN,hh.ba-ba?-at?-[x-y]-na?
+8877,['X'],been,achE,,,,,,,,,,,PN,,,PN,hh.be-en-[x]
+9264,['X'],hiippi,achE,,,,,,,,,,,PN,,,PN,hh.hi-ip?-pi?-[x]
+9583,['X'],garba,achE,,,,,,,,,,,PN,,,PN,hh.kar-ba-x-[…]
+9721,['X'],lagiisis~,achE,,,,,,,,,,,PN,,,PN,hh.la-gi-is?-x-iš
+9870,['X'],maumbara,achE,,,,,,,,,,,PN,,,PN,hh.ma-um-b[a?-x]-ra
+10024,['X'],midaqa,achE,,,,,,,,,,,PN,,,PN,hh.mi-da-qa?-[x]
+10157,['ra'],miutrabaudda,achE,,,,,,,,,,,PN,,,PN,hh.mi-ut-<ra>-ba-ud-da
+10298,['X'],nasa,achE,,,,,,,,,,,PN,,,PN,hh.na-sa?-[x]
+10542,['X'],gaus~uqa,achE,,,,,,,,,,,PN,,,PN,hh.qa-u-šu-qa-[x]
+10825,['da'],s~iyatibardatanna,achE,,,,,,,,,,,PN,,,PN,hh.ši-ya-ti-bar-<da>-tan-na
+10857,['X'],s~umina,achE,,,,,,,,,,,PN,,,PN,hh.šu-mi-na-[x]
+10900,['na'],dakqarina,achE,,,,,,,,,,,PN,,,PN,hh.tak-qa-ri-<na>
+10906,['X'],dakruda,achE,,,,,,,,,,,PN,,,PN,hh.tak?-ru-da?-x
+10910,['X'],dam5masa,achE,,,,,,,,,,,PN,,,PN,hh.tam5-ma-x-sa
+11130,['X'],usira,achE,,,,,,,,,,,PN,,,PN,hh.ú-si?-ra-[x]
+11183,"['X', 'X']",umkury,achE,,,,,,,,,,,PN,,,PN,hh.um-kur?-x-y
+11627,"['X', 'X']",laynaki,nE,,,,,,,,,,,PN,,,PN,hw.la-[x-y]-na-ki
+11628,['X'],laut,nE,,,,,,,,,,,PN,,,PN,hw.la-[x]-ut
+11965,['X'],gininume,oE,,,,,,,,,,,PN,,,PN,ki-ni-nu-me-[x]
+12213,"['X', 'X']",luuty,oE,,,,,,,,,,,PN,,,PN,lu-ut-x-y
+12224,['X'],maanhata,oE,,,,,,,,,,,PN,,,PN,ma-an.ha-ta-[x]
+12245,"['X', 'X']",mabuyit,mE,,,,,,,,,,,PN,,,PN,ma?-bu?-x-y-it
+12327,['X'],nis~i,oE,,,,,,,,,,,PN,,,PN,ni-ši-x
+12425,['X'],raars~aha,oE,,,,,,,,,,,PN,,,PN,ra-ar-šà-ha-[x]
+12677,['X'],dabbaaabi,oE,,,,,,,,,,,PN,,,PN,tab-ba-a-a-bi-[x]
+12678,['X'],dabbaaani,oE,,,,,,,,,,,PN,,,PN,tab-ba-a?-a-ni-[x]
+12691,['ti'],danrauballiṭ(ti),oE,,,,,,,,,,,PN,,,PN,tan-ra.uballiṭ(TI)
+12748,['X'],deimtiluniru,mE,,,,,,,,,,,PN,,,PN,te-im-ti.lu?-ni?-x-ru?
+12824,"['X', 'X']",ulimey,oE,,,,,,,,,,,PN,,,PN,ú-li-me-x-y
+13231,['X'],simemes~aal,nE,,,,,,,,,,,PN,,,PN,v.si-me-me.ša-a[l?-x]
+13299,['X'],urusu,mE,,,,,,,,,,,PN,,,PN,v.ú-ru-su-x
+13387,"['X', 'X']",zaariyya,oE,,,,,,,,,,,PN,,,PN,za-ar-i-[x-y]-ya
+13574,['X'],aktinuman,achE,,,,,,,,,,,GN,,,GN,h.ak?-ti?-nu?-man?-x
+13700,['X'],meir,mE,,,,,,,,,,,GN,,,GN,h.me-ir-[x]
+13851,['X'],beduun,oE,,,,,,,,,,,GN,,,GN,v.be-[x]-du-un
+13896,"['X', 'X']",biitrilay,mE,,,,,,,,,,,GN,,,GN,[h.bì]-it.ri-[x]-la-[y]
+13914,['X'],biithatu,mE,,,,,,,,,,,GN,,,GN,h.bì-i[t.x-ha-tu4
+13915,['X'],biitarriqa,mE,,,,,,,,,,,GN,,,GN,h.bì-it.[x-a]r-ri-qa
+13916,['X'],biitkiis~is~kur,mE,,,,,,,,,,,GN,,,GN,h.bì-it.[x]-ki-iš.d.IŠKUR
+13918,"['X', 'X']",biitynaaps~ira,mE,,,,,,,,,,,GN,,,GN,h.bì-it.[x-y]-na-ap-ši-ra
+14076,['h'],diakrakas~,achE,,,,,,,,,,,GN,,,GN,<h>.ti-ak-ra-kaš
+14248,['X'],gakkunupi,achE,,,,,,,,,,,GN,,,GN,h.kak-ku-nu-pi-[x?]
+14443,['X'],guis~la,achE,,,,,,,,,,,GN,,,GN,h.ku-[x]-iš-la
+14474,"['X', 'X']",huzi,oE,,,,,,,,,,,GN,,,GN,hu-zi-x-x
+14486,['X'],halalmi,mE,,,,,,,,,,,GN,,,GN,hal.[x]-al-mi
+14626,['X'],hus~autma,achE,,,,,,,,,,,GN,,,GN,h.hu?-šá?-ut-ma-[x?]
+14632,['X'],hutes~ein,oE,,,,,,,,,,,GN,,,GN,hu-te-še-x-in
+14685,['X'],itaaaru,oE,,,,,,,,,,,GN,,,GN,URU.i-ta-a-a-ru-[x?]
+14692,['X'],laba,achE,,,,,,,,,,,GN,,,GN,h.la-ba?-x
+14807,['X'],maunais~,achE,,,,,,,,,,,GN,,,GN,h.ma-u-na-[x]-iš
+14920,['X'],raku,achE,,,,,,,,,,,GN,,,GN,h.ra-[ku?-x]
+15206,['X'],uzzi,mE,,,,,,,,,,,GN,,,GN,h.uz-z[i-x]
+15304,['X'],arli,nE,,,,,,,,,,,DN,,,DN,d.ar-x-li
