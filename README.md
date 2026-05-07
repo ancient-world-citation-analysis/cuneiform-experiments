@@ -2,6 +2,8 @@
 
 **Anonymous Authors** &middot; *Anonymous Affiliation*
 
+**Anonymous mirror for review:** <https://anonymous.4open.science/r/cuneiform-experiments>
+
 This repository contains the code and curated data needed to reproduce the
 experiments reported in *Word Boundaries Without Dictionaries*. The pipeline
 covers three cuneiform languages — **Elamite (elx)**, **Akkadian (akk)**, and
@@ -12,7 +14,7 @@ evaluation.
 
 The companion library used by the notebooks (Unicode conversion, sign-list
 loaders, POS harmonization helpers) is available as a separate anonymous
-release: **<https://anonymous.4open.science/r/cunei-tools>**.
+release: <https://anonymous.4open.science/r/cunei-tools>.
 
 ---
 
