@@ -1,0 +1,130 @@
+{
+  "morfessor_transfer": {
+    "akk->akk": {
+      "f1": 0.9963821372007683,
+      "precision": 0.9970553136867517,
+      "recall": 0.9957099335006504,
+      "note": "CV held-out (from previous run)",
+      "vocab_overlap": 1.0
+    },
+    "akk->sux": {
+      "f1": 0.9812738152050219,
+      "precision": 0.9728895579230565,
+      "recall": 0.989803837927827,
+      "tp": 334136,
+      "fp": 9311,
+      "fn": 3442,
+      "vocab_overlap": 0.9945587208407797
+    },
+    "akk->elx": {
+      "f1": 0.9835589380119676,
+      "precision": 1.0,
+      "recall": 0.967649748513946,
+      "tp": 8465,
+      "fp": 0,
+      "fn": 283,
+      "vocab_overlap": 0.9896953912354207
+    },
+    "sux->akk": {
+      "f1": 0.8564511448907941,
+      "precision": 0.9765031281008163,
+      "recall": 0.7626859912691736,
+      "tp": 1852112,
+      "fp": 44566,
+      "fn": 576295,
+      "vocab_overlap": 0.9636074037638079
+    },
+    "sux->sux": {
+      "f1": 0.9930429934373615,
+      "precision": 0.9966688354479227,
+      "recall": 0.9894518050129679,
+      "note": "CV held-out (from previous run)",
+      "vocab_overlap": 1.0
+    },
+    "sux->elx": {
+      "f1": 0.953212875433768,
+      "precision": 1.0,
+      "recall": 0.9106081390032007,
+      "tp": 7966,
+      "fp": 0,
+      "fn": 782,
+      "vocab_overlap": 0.9896953912354207
+    },
+    "elx->akk": {
+      "f1": 0.3037836501180821,
+      "precision": 0.9555153707052442,
+      "recall": 0.18060069831786846,
+      "tp": 438572,
+      "fp": 20418,
+      "fn": 1989835,
+      "vocab_overlap": 0.7418561342189192
+    },
+    "elx->sux": {
+      "f1": 0.26736163096685134,
+      "precision": 0.9324719001681565,
+      "recall": 0.156052823347493,
+      "tp": 52680,
+      "fp": 3815,
+      "fn": 284898,
+      "vocab_overlap": 0.7170150189956565
+    },
+    "elx->elx": {
+      "f1": 0.9846270528551203,
+      "precision": 0.9993925646614427,
+      "recall": 0.9704909989963129,
+      "note": "CV held-out (from previous run)",
+      "vocab_overlap": 1.0
+    }
+  },
+  "morfessor_diagonal_cv": {
+    "akk": {
+      "f1": 0.9963821372007683,
+      "precision": 0.9970553136867517,
+      "recall": 0.9957099335006504
+    },
+    "sux": {
+      "f1": 0.9930429934373615,
+      "precision": 0.9966688354479227,
+      "recall": 0.9894518050129679
+    },
+    "elx": {
+      "f1": 0.9846270528551203,
+      "precision": 0.9993925646614427,
+      "recall": 0.9704909989963129
+    }
+  },
+  "tp_tuned_reference": {
+    "akk->akk": 0.971,
+    "akk->sux": 0.968,
+    "akk->elx": 0.995,
+    "sux->akk": 0.966,
+    "sux->sux": 0.972,
+    "sux->elx": 0.995,
+    "elx->akk": 0.959,
+    "elx->sux": 0.969,
+    "elx->elx": 0.989
+  },
+  "tp_zeroshot_reference": {
+    "akk->sux": 0.967,
+    "akk->elx": 0.992,
+    "sux->akk": 0.96,
+    "sux->elx": 0.993
+  },
+  "vocab_sizes": {
+    "akk": 1487,
+    "sux": 916,
+    "elx": 142
+  },
+  "doc_counts": {
+    "akk": 13502,
+    "sux": 394,
+    "elx": 84
+  },
+  "summary": {
+    "morf_diag_mean": 0.9913507278310835,
+    "morf_offdiag_mean": 0.7242736757710809,
+    "morf_offdiag_min": 0.26736163096685134,
+    "morf_offdiag_max": 0.9835589380119676,
+    "tp_offdiag_mean": 0.978
+  }
+}

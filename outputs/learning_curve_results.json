@@ -1,0 +1,81 @@
+{
+  "protocol": {
+    "n_test_docs": 500,
+    "test_tokens": 95076,
+    "pool_tokens": 2346547,
+    "seed": 42,
+    "morfessor_corpusweight": 1.0
+  },
+  "results": [
+    {
+      "target_tokens": 1000,
+      "actual_tokens": 1037,
+      "n_docs": 10,
+      "tp_f1": 0.9627720681839351,
+      "tp_theta": 0.0,
+      "morf_f1": 0.6692880077114582,
+      "morf_precision": 0.9726482978251668,
+      "morf_recall": 0.5101704233095107
+    },
+    {
+      "target_tokens": 5000,
+      "actual_tokens": 6022,
+      "n_docs": 33,
+      "tp_f1": 0.9658806725895523,
+      "tp_theta": 0.0,
+      "morf_f1": 0.922796955372888,
+      "morf_precision": 0.987817381340088,
+      "morf_recall": 0.8658075020087115
+    },
+    {
+      "target_tokens": 10000,
+      "actual_tokens": 10058,
+      "n_docs": 65,
+      "tp_f1": 0.9671100039117992,
+      "tp_theta": 0.0,
+      "morf_f1": 0.9706045539509054,
+      "morf_precision": 0.9894457074451144,
+      "morf_recall": 0.9524675434516007
+    },
+    {
+      "target_tokens": 50000,
+      "actual_tokens": 50267,
+      "n_docs": 300,
+      "tp_f1": 0.9685719706487126,
+      "tp_theta": 0.0,
+      "morf_f1": 0.9891281222075657,
+      "morf_precision": 0.9953114964675658,
+      "morf_recall": 0.9830211020425424
+    },
+    {
+      "target_tokens": 100000,
+      "actual_tokens": 100760,
+      "n_docs": 539,
+      "tp_f1": 0.968574358974359,
+      "tp_theta": 0.0,
+      "morf_f1": 0.9923388722650198,
+      "morf_precision": 0.9959955695663287,
+      "morf_recall": 0.9887089271366347
+    },
+    {
+      "target_tokens": 500000,
+      "actual_tokens": 500157,
+      "n_docs": 2768,
+      "tp_f1": 0.9686530997802739,
+      "tp_theta": 0.0,
+      "morf_f1": 0.996679883690193,
+      "morf_precision": 0.9968169031957869,
+      "morf_recall": 0.9965429018480145
+    },
+    {
+      "target_tokens": 2346547,
+      "actual_tokens": 2346547,
+      "n_docs": 13002,
+      "tp_f1": 0.9681825411892679,
+      "tp_theta": 0.0,
+      "morf_f1": 0.9966394826390911,
+      "morf_precision": 0.9977853365970478,
+      "morf_recall": 0.9954962574533768
+    }
+  ]
+}

@@ -1,83 +1,64 @@
-# Reproduction Code for: Word Boundaries Without Dictionaries
+# Reproduction code: *What Transfers Across Cuneiform? Script-Level Substrate and Language-Specific Regularities via Segmentation and Representation*
 
-**Anonymous Authors** &middot; *Anonymous Affiliation*
+**Anonymous submission** &middot; EMNLP 2026 (ARR)
 
 **Anonymous mirror for review:** <https://anonymous.4open.science/r/cuneiform-experiments>
 
-This repository contains the code and curated data needed to reproduce the
-experiments reported in *Word Boundaries Without Dictionaries*. The pipeline
-covers three cuneiform languages — **Elamite (elx)**, **Akkadian (akk)**, and
-**Sumerian (sux)** — and compares Latin transliteration against Unicode
-cuneiform across five tasks: embedding evaluation, transitional-probability
-word-boundary inference, POS classification, lemmatization, and LLM
-evaluation.
+This repository contains the code, curated data, and pre-computed result
+artifacts needed to reproduce the experiments reported in the paper. The
+pipeline covers three southern-Mesopotamian languages — **Akkadian (akk)**,
+**Sumerian (sux)**, **Elamite (elx)** — plus a **Hittite (hit)** extension
+used as a substrate-violation test.
 
-The companion library used by the notebooks (Unicode conversion, sign-list
-loaders, POS harmonization helpers) is available as a separate anonymous
-release: <https://anonymous.4open.science/r/cunei-tools>.
+The paper frames cuneiform as having two superimposable kinds of statistical
+regularity:
+
+* **Script-level regularities**, which are shared across languages, recoverable
+  from very little segmented text, and exposed by a transitional-probability
+  word-boundary segmenter (TP). Notebooks 02, 03, 04 quantify this; notebook 06
+  shows it is not driven by logograms.
+* **Language-specific regularities**, which do not transfer across languages
+  and require representation-aware models. Notebook 05 stresses this with a
+  Hittite substrate test; notebooks 07 and 08 quantify it by contrasting Latin
+  transliteration against Unicode cuneiform on POS classification and
+  representation-concatenation / gated-dual-encoder probes.
+
+The companion library used by these notebooks — Unicode conversion, sign-list
+loaders, the `CuneiSeg` transitional-probability segmenter — is released as a
+separate anonymous package:
+<https://anonymous.4open.science/r/cunei-tools>.
 
 ---
 
-## Repository layout
+## Notebook execution order
 
-```
-cuneiform-experiments/
-├── README.md
-├── requirements.txt
-├── notebooks/
-│   ├── ThreeLanguagePipeline.ipynb        # master pipeline: all 5 experiments × 3 languages
-│   ├── ElamiteExperiments.ipynb           # Elamite-focused deep dive (Exp 1–3)
-│   ├── ElamiteExp4_Lemmatization.ipynb    # standalone Elamite lemmatization
-│   ├── ElamiteExp5_LLM_Evaluation.ipynb   # standalone Elamite LLM eval
-│   ├── GraphAnalysis_ThreeLanguages.ipynb # cosine-similarity edge graphs
-│   ├── HittitePipeline.ipynb              # Hittite-only run (additional language)
-│   ├── ByT5_Cuneiform.ipynb               # ByT5 fine-tuning comparison
-│   └── ElamiteNewData.ipynb               # data preprocessing / Unicode conversion
-├── scripts/
-│   └── filter_oracc_data.py               # turns Zenodo finaldf.csv → AKK / SUX subsets
-└── data/
-    ├── 7000_hitt_txts_wGloss.csv          # Hittite glossed texts (curated)
-    ├── Elamite_Lemma-base-draft.xlsx      # Elamite lemma base (curated)
-    ├── Elamite-Lemma-Base-Unicode.csv     # Unicode-converted lemma base
-    ├── UnTN-Nasu texts Word-level.csv     # Utu-Našu word-level corpus
-    ├── to_unicode_nasu_clean.csv          # cleaned Nasu transliterations
-    ├── unmatchednew - solonew.csv         # manual sign mapping (curated)
-    ├── unmatchednew_AAedit - unmatchednew.csv
-    ├── unmatchednewfinal.csv
-    └── three_lang_results.json            # cached run output (regenerable)
+| # | Notebook | Paper section | Approx. runtime |
+|---|---|---|---|
+| 01 | `01_data_preparation.ipynb` | §3 Data & preprocessing | ~3 min (curated only); ~15 min with ORACC |
+| 02 | `02_in_language_segmentation.ipynb` | §4 In-language segmentation (Table 2) | ~5 min CPU |
+| 03 | `03_cross_language_transfer_matrix.ipynb` | §5 Cross-language transfer (Table 3) | ~10 min CPU |
+| 04 | `04_learning_curve.ipynb` | §4.3 Learning curve (Figure 3) | ~15 min CPU |
+| 05 | `05_hittite_substrate_violation.ipynb` | §6 Hittite substrate (Tables 4-5) | ~5 min CPU |
+| 06 | `06_logogram_robustness.ipynb` | §7 Logogram robustness (Table 6) | ~5 min CPU |
+| 07 | `07_pos_classification.ipynb` | §8.1 POS classification (Table 7) | ~10 min CPU / 3 min GPU |
+| 08 | `08_representation_concatenation.ipynb` | §8.2-3 Concatenation & gated dual encoder (Table 8, Figure 4) | ~20 min CPU / 5 min GPU |
+
+The shared setup logic (sign-list merging, POS harmonization, per-language
+loaders) lives in `notebooks/_setup.py` and is imported by every numbered
+notebook:
+
+```python
+from _setup import load_corpora, POS_HARMONIZATION, BASE_PATH
 ```
 
-## Paper artifact → notebook map
+`BASE_PATH` defaults to `/path/to/cuneiform/data/` and can be overridden by
+exporting `CUNEI_DATA=/your/data/dir` before launching Jupyter.
 
-The main paper experiments are all driven from
-`notebooks/ThreeLanguagePipeline.ipynb`. The standalone notebooks contain the
-extended analyses and per-language deep-dives referenced in the paper.
-
-| Paper artifact | Topic | Produced by |
-|---|---|---|
-| Dataset statistics table | Per-language token / type counts | `ThreeLanguagePipeline.ipynb` § 5 (Dataset Summary) |
-| Rare-token analysis table | Type/token rates and rare-token coverage | `ThreeLanguagePipeline.ipynb` § *Rare Token Analysis* |
-| Cross-language transfer table | Transfer between Latin / Unicode / languages | `ThreeLanguagePipeline.ipynb` § *Cross Language Transfer* |
-| Embedding comparison table (Exp 1) | Silhouette + morpheme coherence, Latin vs Unicode | `ThreeLanguagePipeline.ipynb` § Experiment 1; `ElamiteExperiments.ipynb` § 2 |
-| t-SNE / silhouette figures (Exp 1) | Per-class silhouette bars, embedding plots | `ThreeLanguagePipeline.ipynb` § Experiment 1 |
-| Graph-analysis figures | Modularity, community count, eigenvector centrality, reinforced-edge networks | `GraphAnalysis_ThreeLanguages.ipynb` |
-| Word-boundary inference table (Exp 2) | TP precision / recall / F1, Latin vs Unicode | `ThreeLanguagePipeline.ipynb` § Experiment 2; `ElamiteExperiments.ipynb` § 3 |
-| TP threshold-sweep figures | F1 vs threshold, per language | `ThreeLanguagePipeline.ipynb` § Experiment 2 (writes `threshold_sweep_{lang}.csv`) |
-| POS classification table (Exp 3) | n-gram LR / k-NN / BiLSTM, two tagsets | `ThreeLanguagePipeline.ipynb` § Experiment 3 / 3b / 3c; `ElamiteExperiments.ipynb` § 4 |
-| Lemmatization table (Exp 4) | Char-seq2seq exact-match, Latin vs Unicode | `ThreeLanguagePipeline.ipynb` § Experiment 4; `ElamiteExp4_Lemmatization.ipynb` |
-| LLM evaluation table (Exp 5) | Zero/few-shot Claude + GPT-4o | `ThreeLanguagePipeline.ipynb` § Experiment 5; `ElamiteExp5_LLM_Evaluation.ipynb` |
-| ByT5 fine-tuning table | ByT5 classifier, Latin vs Unicode | `ByT5_Cuneiform.ipynb` § Cell 13 (Summary Comparison) |
-| Gated dual-encoder + baseline transformer table | Learned per-input gating analysis | `ThreeLanguagePipeline.ipynb` § Experiment 6 |
-| Hittite-only results | Single-language replication | `HittitePipeline.ipynb` § 11 (Results Summary) |
-| Radar / summary figure | Multi-task summary across languages | `ThreeLanguagePipeline.ipynb` § Results Summary |
-| LaTeX result tables | Direct paper-table source | `ThreeLanguagePipeline.ipynb` § Results Summary & LaTeX Tables |
+---
 
 ## Setup
 
-The pipeline was developed in Python 3.10. The notebooks are designed to run
-in Google Colab (which is the simplest path because of GPU and Drive
-integration), but they also run locally if the data files are placed under
-`./data/` next to the notebook.
+The pipeline was developed and tested on Python 3.10.
 
 ```bash
 git clone <this anonymous repo URL>
@@ -85,79 +66,131 @@ cd cuneiform-experiments
 
 python -m venv .venv
 source .venv/bin/activate
-
 pip install --upgrade pip
 pip install -r requirements.txt
 
-# Plus the anonymous companion library:
+# Companion library (separate anonymous mirror)
 pip install git+https://anonymous.4open.science/r/cunei-tools
+
+# Point the notebooks at your data directory
+export CUNEI_DATA=/path/to/cuneiform/data/
+jupyter lab notebooks/
 ```
 
-Additional packages used by individual notebooks (install on demand):
-`fasttext`, `gensim`, `scikit-learn`, `torch`, `transformers`,
-`sentencepiece`, `nltk`, `pandas`, `numpy`, `matplotlib`, `seaborn`,
-`networkx`, `python-louvain`, `umap-learn`. The LLM-evaluation notebook
-additionally requires `anthropic` and `openai` clients with valid API keys.
+The deep-learning notebooks (07, 08, and the optional `ByT5_Cuneiform.ipynb`)
+will use a CUDA GPU automatically if one is available; everything else is
+CPU-only.
 
-### Running in Colab
-
-`ElamiteNewData.ipynb` and the `*Pipeline*.ipynb` notebooks contain a Drive
-mount step. After the anonymization pass in this release the previous
-`/content/drive/MyDrive/...` paths have been rewritten to `data/`, so once
-you upload the contents of `./data/` to your Colab session (or mount Drive
-and put them at `MyDrive/data/`) the notebooks read them transparently.
+---
 
 ## Data sources
 
-This repository ships only data that is **not** publicly available
-elsewhere. Two large public sources must be downloaded separately before
-running the full Akkadian / Sumerian experiments:
+This repository ships only data that is **not** publicly available elsewhere.
+Two large public sources must be downloaded separately to run the full
+Akkadian / Sumerian pipeline:
 
-1. **ORACC corpus dump** — `finaldf.csv` (≈1.5 GB), distributed via Zenodo:
+1. **ORACC corpus dump** — `finaldf.csv` (~1.5 GB) on Zenodo:
    <https://zenodo.org/records/10794626/files/finaldf.csv>
    After download, run `python scripts/filter_oracc_data.py` from the
    directory containing `finaldf.csv` to produce `alltexts_AKK.csv` and
-   `alltexts_SUX.csv`. The `*Pipeline*.ipynb` notebooks expect those two
-   files in `data/`.
+   `alltexts_SUX.csv`. Move both files into `$CUNEI_DATA`.
 2. **ETCSL (Sumerian Literature)** — used as a complementary source for
-   Sumerian text, available at <https://etcsl.orinst.ox.ac.uk/>.
+   Sumerian text: <https://etcsl.orinst.ox.ac.uk/>.
 
-The notebooks also pull the following sign-list resources directly from
-GitHub at runtime (no manual download needed):
+Sign-list resources are pulled from public GitHub mirrors at runtime (no
+manual download needed):
 
-- *Akkademia* sign list — `https://raw.githubusercontent.com/gaigutherz/Akkademia/master/cuneiform_to_unicode_fixed.csv`
-- *Nuolenna* sign list — `https://raw.githubusercontent.com/situx/Nuolenna/master/sign_list.json`
+- *Nuolenna* sign list — `situx/Nuolenna`
+- *Akkademia* sign list — `gaigutherz/Akkademia`
 
-The remaining curated resources (Hittite glossed corpus, Elamite lemma
-base, Utu-Našu word-level corpus, manual sign corrections) are bundled
-under `data/` because they were assembled by the authors and are not
-otherwise distributed.
+The remaining curated resources (Hittite glossed corpus, Elamite lemma base,
+Utu-Našu word-level corpus, manual sign corrections) are bundled under `data/`.
 
-## Reproducing a specific table or figure
+---
 
-1. Set up the environment and data as above.
-2. Open `notebooks/ThreeLanguagePipeline.ipynb`.
-3. Run the *Setup*, *POS Harmonization*, *Sign Lists*, and *Load All
-   Three Languages* cells (sections 0–3).
-4. Jump to the experiment section corresponding to the target artifact in
-   the table above.
-5. The final two cells of the pipeline write `data/three_lang_results.json`
-   (numerical results) and emit LaTeX source for the paper tables.
+## Reproducing Table 3 (cross-language transfer matrix)
 
-For the standalone deep dives (`ElamiteExperiments.ipynb`,
-`ElamiteExp4_Lemmatization.ipynb`, `ElamiteExp5_LLM_Evaluation.ipynb`,
-`GraphAnalysis_ThreeLanguages.ipynb`, `HittitePipeline.ipynb`,
-`ByT5_Cuneiform.ipynb`) just run the notebook end-to-end — each is
-self-contained given `data/` and `requirements.txt`.
+Table 3 is the headline result. To reproduce it:
+
+```bash
+export CUNEI_DATA=/path/to/cuneiform/data/
+jupyter nbconvert --to notebook --execute \
+  notebooks/01_data_preparation.ipynb \
+  notebooks/03_cross_language_transfer_matrix.ipynb
+```
+
+Outputs written:
+
+```
+outputs/table3_transfer_matrix.csv      # F1 matrix
+outputs/table3_transfer_matrix_ci.csv   # bootstrap CIs
+outputs/figure2_transfer_bars.png       # per-row bars
+outputs/table3_morfessor_transfer.json  # Morfessor baseline row
+```
+
+Expected runtime end-to-end: ~12 minutes on CPU.
+
+---
+
+## Repository layout
+
+```
+cuneiform-experiments/
+├── README.md                 # this file
+├── requirements.txt
+├── notebooks/
+│   ├── _setup.py             # shared setup utilities (imported by 01-08)
+│   ├── 01_data_preparation.ipynb
+│   ├── 02_in_language_segmentation.ipynb
+│   ├── 03_cross_language_transfer_matrix.ipynb
+│   ├── 04_learning_curve.ipynb
+│   ├── 05_hittite_substrate_violation.ipynb
+│   ├── 06_logogram_robustness.ipynb
+│   ├── 07_pos_classification.ipynb
+│   ├── 08_representation_concatenation.ipynb
+│   ├── ByT5_Cuneiform.ipynb              # ByT5 fine-tuning baseline (optional)
+│   ├── ElamiteExp4_Lemmatization.ipynb   # lemmatization deep-dive (Appendix)
+│   ├── ElamiteExp5_LLM_Evaluation.ipynb  # LLM eval (Appendix)
+│   ├── ElamiteExperiments.ipynb          # Elamite-only embedding analysis (Appendix)
+│   ├── ElamiteNewData.ipynb              # preprocessing reference (Appendix)
+│   ├── GraphAnalysis_ThreeLanguages.ipynb # graph analysis figure (Appendix)
+│   └── archive/                          # superseded monoliths kept for traceability
+├── scripts/
+│   └── filter_oracc_data.py
+├── data/
+│   ├── 7000_hitt_txts_wGloss.csv
+│   ├── Elamite_Lemma-base-draft.xlsx
+│   ├── Elamite-Lemma-Base-Unicode.csv
+│   ├── UnTN-Nasu texts Word-level.csv
+│   ├── to_unicode_nasu_clean.csv
+│   ├── unmatchednew*.csv
+│   └── three_lang_results.json
+└── outputs/
+    ├── README.md             # paper-element ↔ file mapping
+    ├── figure3_learning_curve.{png,pdf}
+    ├── learning_curve_results.json
+    ├── table3_morfessor_transfer.json
+    └── table4_hittite_in_language.json
+```
+
+---
 
 ## Notes for reviewers
 
-- All paths under the original Drive layout have been rewritten to
-  relative `data/` paths.
-- Author / affiliation strings in markdown cells have been replaced with
-  `Anonymous Authors` / `Anonymous Affiliation`.
-- No execution metadata that could identify the authors is retained (Colab
-  user IDs, execution info, and notebook-level author fields have been
-  stripped).
-- Random seeds are fixed where stated in the notebooks
-  (`SEED = 42` is the default).
+- All randomness uses `SEED = 42`. Every numbered notebook seeds `random`,
+  `numpy`, and `torch` at the top.
+- Notebook outputs (figures, CSVs, JSON) are written to `outputs/` with
+  filenames mirroring the paper artifact they correspond to. See
+  `outputs/README.md` for the table-by-table mapping.
+- All previous Colab Drive paths (`/content/drive/MyDrive/…`) have been
+  rewritten to relative `data/` paths. Setting `$CUNEI_DATA` once is enough.
+- Author / affiliation strings have been stripped throughout: the notebooks
+  contain no `displayName` / `userId` metadata, no institutional names, and
+  no personal email addresses.
+- The Appendix notebooks (`ElamiteExp4_Lemmatization`, `ElamiteExp5_LLM_Evaluation`,
+  `ElamiteExperiments`, `ElamiteNewData`, `GraphAnalysis_ThreeLanguages`,
+  `ByT5_Cuneiform`) cover extended analyses that are not in the main paper
+  but are referenced for completeness.
+- The two superseded monoliths (`ThreeLanguagePipeline.ipynb`, the original
+  `HittitePipeline.ipynb`) are preserved under `notebooks/archive/` so a
+  reviewer can verify the split was content-preserving.
