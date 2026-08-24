@@ -1,0 +1,40 @@
+{
+  "experiment": "H: mechanism controls (inventory clamp + localization)",
+  "elx_inventory_types": 142,
+  "h1_inventory_clamp": {
+    "sux": {
+      "clamped_docs": 394,
+      "clamped_tokens": 242331,
+      "lexicon_types": 119,
+      "f1_akk_mean": 0.28254173025629786,
+      "f1_elx_mean": 0.5985261134251842,
+      "f1_akk_std": 0.0,
+      "f1_elx_std": 0.0
+    },
+    "akk": {
+      "clamped_docs": 13366,
+      "clamped_tokens": 1811132,
+      "lexicon_types": 119,
+      "f1_sux_mean": 0.2848367402849724,
+      "f1_elx_mean": 0.8804862444017914,
+      "f1_sux_std": 0.0,
+      "f1_elx_std": 1.1102230246251565e-16
+    }
+  },
+  "h2_boundary_localization_elx_to_akk": {
+    "covered": {
+      "boundaries": 1376411,
+      "recalled": 352441,
+      "recall": 0.25605796524439284
+    },
+    "uncovered": {
+      "boundaries": 1051710,
+      "recalled": 86131,
+      "recall": 0.0818961500793945
+    }
+  },
+  "reference": {
+    "elx->akk_published": 0.3038,
+    "sux_full->akk_reproduced": 0.8568
+  }
+}

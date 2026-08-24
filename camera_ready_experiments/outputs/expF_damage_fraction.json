@@ -1,0 +1,38 @@
+{
+  "experiment": "F: damaged/excluded token share per corpus",
+  "results": {
+    "akk": {
+      "raw_rows": 1628434,
+      "excluded_rows": 372765,
+      "excluded_pct": 22.89101062738803,
+      "ingested_tokens": 1255669,
+      "damaged_sign_tokens": 176001,
+      "missing_sign_tokens": 217018,
+      "damage_marked": 344198,
+      "damage_marked_pct": 27.41152325971255,
+      "note": "token counted if any constituent sign flagged damaged/missing in gdl"
+    },
+    "sux": {
+      "raw_rows": 170856,
+      "excluded_rows": 24713,
+      "excluded_pct": 14.464227185466125,
+      "ingested_tokens": 146143,
+      "damage_marked": 847,
+      "damage_marked_pct": 0.5795693259341878,
+      "note": "ETCSL composite editions; damage largely resolved editorially - count = forms containing illegible-sign placeholder X"
+    },
+    "elx_utu_nashu": {
+      "ingested_tokens": 2582,
+      "damage_marked": 218,
+      "damage_marked_pct": 8.443067389620449,
+      "note": "editorial marks in raw word transliterations"
+    },
+    "elx_susa_new": {
+      "documents": 787,
+      "ingested_tokens": 35304,
+      "damage_marked": 7740,
+      "damage_marked_pct": 21.923861318830728,
+      "note": "editorial marks in raw document transliterations"
+    }
+  }
+}

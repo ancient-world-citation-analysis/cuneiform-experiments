@@ -1,0 +1,132 @@
+{
+  "experiment": "A2: TP on the same SUX subsamples",
+  "protocol": {
+    "subsamples": "identical to expA (subsample_docs, seeds 42-46)",
+    "zeroshot": "theta tuned on source subsample",
+    "tuned": "theta tuned on target (cunei-tools default grid)"
+  },
+  "runs": [
+    {
+      "budget": 13000,
+      "seed": 42,
+      "actual_tokens": 13479,
+      "src_theta": 0.55,
+      "f1_akk_zeroshot": 0.9612563566157226,
+      "f1_akk_tuned": 0.9692664145079541,
+      "f1_elx_zeroshot": 0.994768565904697,
+      "f1_elx_tuned": 0.994768565904697
+    },
+    {
+      "budget": 13000,
+      "seed": 43,
+      "actual_tokens": 15300,
+      "src_theta": 0.7,
+      "f1_akk_zeroshot": 0.9617365683833549,
+      "f1_akk_tuned": 0.9679910451259248,
+      "f1_elx_zeroshot": 0.9947120031841701,
+      "f1_elx_tuned": 0.9947120031841701
+    },
+    {
+      "budget": 13000,
+      "seed": 44,
+      "actual_tokens": 15155,
+      "src_theta": 0.85,
+      "f1_akk_zeroshot": 0.9609209271741567,
+      "f1_akk_tuned": 0.9627150267833214,
+      "f1_elx_zeroshot": 0.994372761893935,
+      "f1_elx_tuned": 0.9946548390765382
+    },
+    {
+      "budget": 13000,
+      "seed": 45,
+      "actual_tokens": 13809,
+      "src_theta": 0.8,
+      "f1_akk_zeroshot": 0.9607896066967666,
+      "f1_akk_tuned": 0.9610209143895659,
+      "f1_elx_zeroshot": 0.994372761893935,
+      "f1_elx_tuned": 0.9947120031841701
+    },
+    {
+      "budget": 13000,
+      "seed": 46,
+      "actual_tokens": 13133,
+      "src_theta": 0.95,
+      "f1_akk_zeroshot": 0.9606658814913053,
+      "f1_akk_tuned": 0.9609869627739858,
+      "f1_elx_zeroshot": 0.9943155979990905,
+      "f1_elx_tuned": 0.9946548390765382
+    },
+    {
+      "budget": 8831,
+      "seed": 42,
+      "actual_tokens": 11170,
+      "src_theta": 0.8,
+      "f1_akk_zeroshot": 0.9608956527281242,
+      "f1_akk_tuned": 0.9702041655759632,
+      "f1_elx_zeroshot": 0.9944292860391087,
+      "f1_elx_tuned": 0.9946542311191993
+    },
+    {
+      "budget": 8831,
+      "seed": 43,
+      "actual_tokens": 9038,
+      "src_theta": 0.9,
+      "f1_akk_zeroshot": 0.960661268529292,
+      "f1_akk_tuned": 0.961667065999549,
+      "f1_elx_zeroshot": 0.994372761893935,
+      "f1_elx_tuned": 0.9947120031841701
+    },
+    {
+      "budget": 8831,
+      "seed": 44,
+      "actual_tokens": 9387,
+      "src_theta": 0.9,
+      "f1_akk_zeroshot": 0.9608650708216756,
+      "f1_akk_tuned": 0.9647830582821615,
+      "f1_elx_zeroshot": 0.994201250710631,
+      "f1_elx_tuned": 0.9944833077404311
+    },
+    {
+      "budget": 8831,
+      "seed": 45,
+      "actual_tokens": 10584,
+      "src_theta": 0.85,
+      "f1_akk_zeroshot": 0.9608200441155459,
+      "f1_akk_tuned": 0.9608200441155459,
+      "f1_elx_zeroshot": 0.994372761893935,
+      "f1_elx_tuned": 0.9947120031841701
+    },
+    {
+      "budget": 8831,
+      "seed": 46,
+      "actual_tokens": 9199,
+      "src_theta": 0.65,
+      "f1_akk_zeroshot": 0.9611661637139733,
+      "f1_akk_tuned": 0.9611661637139733,
+      "f1_elx_zeroshot": 0.9947120031841701,
+      "f1_elx_tuned": 0.9947120031841701
+    }
+  ],
+  "summary": {
+    "13000": {
+      "f1_akk_zeroshot_mean": 0.9610738680722613,
+      "f1_akk_zeroshot_std": 0.00038551842212000996,
+      "f1_akk_tuned_mean": 0.9643960727161505,
+      "f1_akk_tuned_std": 0.0035350727164115987,
+      "f1_elx_zeroshot_mean": 0.9945083381751655,
+      "f1_elx_zeroshot_std": 0.00019136799034736763,
+      "f1_elx_tuned_mean": 0.9947004500852227,
+      "f1_elx_tuned_std": 4.258507081047866e-05
+    },
+    "8831": {
+      "f1_akk_zeroshot_mean": 0.9608816399817222,
+      "f1_akk_zeroshot_std": 0.00016357400534112743,
+      "f1_akk_tuned_mean": 0.9637280995374387,
+      "f1_akk_tuned_std": 0.0035304540793801393,
+      "f1_elx_zeroshot_mean": 0.9944176127443558,
+      "f1_elx_zeroshot_std": 0.00016591426947004442,
+      "f1_elx_tuned_mean": 0.9946547096824281,
+      "f1_elx_tuned_std": 8.857368770539757e-05
+    }
+  }
+}

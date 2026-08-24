@@ -1,0 +1,161 @@
+{
+  "experiment": "B: in-language TP vs Morfessor paired bootstrap",
+  "protocol": {
+    "cv": "5-fold document-level, KFold(shuffle=True, random_state=42)",
+    "tp_theta": "tuned per held-out fold, cunei-tools coarse grid",
+    "morfessor_corpusweight": 1.0,
+    "bootstrap": "document-level paired, 2000 resamples, two-sided"
+  },
+  "results": {
+    "akk": {
+      "n_docs": 13502,
+      "folds": [
+        {
+          "fold": 1,
+          "tp_f1": 0.9721933967258942,
+          "tp_theta": 0.7,
+          "morf_f1": 0.9960499134458337
+        },
+        {
+          "fold": 2,
+          "tp_f1": 0.9726044364266918,
+          "tp_theta": 0.7,
+          "morf_f1": 0.9964749066330555
+        },
+        {
+          "fold": 3,
+          "tp_f1": 0.9718922081426897,
+          "tp_theta": 0.7,
+          "morf_f1": 0.9968609585555542
+        },
+        {
+          "fold": 4,
+          "tp_f1": 0.9687125622810054,
+          "tp_theta": 0.55,
+          "morf_f1": 0.9964352756024952
+        },
+        {
+          "fold": 5,
+          "tp_f1": 0.9698692877231467,
+          "tp_theta": 0.7,
+          "morf_f1": 0.9959864774246794
+        }
+      ],
+      "tp_f1_foldmean": 0.9710543782598855,
+      "tp_f1_foldstd": 0.0015027004996417148,
+      "morf_f1_foldmean": 0.9963615063323237,
+      "morf_f1_foldstd": 0.00031795938897842725,
+      "tp_f1_pooled": 0.9710567501531471,
+      "morf_f1_pooled": 0.9963603067603104,
+      "diff_tp_minus_morf": -0.025303556607163324,
+      "bootstrap": {
+        "observed_diff": -0.025303556607163324,
+        "p_two_sided": 0.0,
+        "ci95_low": -0.026529178969895987,
+        "ci95_high": -0.024162182121382183,
+        "n_docs": 13502,
+        "n_resamples": 2000
+      }
+    },
+    "sux": {
+      "n_docs": 394,
+      "folds": [
+        {
+          "fold": 1,
+          "tp_f1": 0.9735077984763978,
+          "tp_theta": 0.6,
+          "morf_f1": 0.9942464993761264
+        },
+        {
+          "fold": 2,
+          "tp_f1": 0.9744278706269816,
+          "tp_theta": 0.55,
+          "morf_f1": 0.9939525042632477
+        },
+        {
+          "fold": 3,
+          "tp_f1": 0.9722566930323403,
+          "tp_theta": 0.55,
+          "morf_f1": 0.9946735758209254
+        },
+        {
+          "fold": 4,
+          "tp_f1": 0.9681341449703668,
+          "tp_theta": 0.6,
+          "morf_f1": 0.9938346489405899
+        },
+        {
+          "fold": 5,
+          "tp_f1": 0.9689443673466452,
+          "tp_theta": 0.55,
+          "morf_f1": 0.9884629754165732
+        }
+      ],
+      "tp_f1_foldmean": 0.9714541748905464,
+      "tp_f1_foldstd": 0.0024910240509267365,
+      "morf_f1_foldmean": 0.9930340407634924,
+      "morf_f1_foldstd": 0.0023037933132694674,
+      "tp_f1_pooled": 0.9716356387958325,
+      "morf_f1_pooled": 0.993024019787822,
+      "diff_tp_minus_morf": -0.021388380991989475,
+      "bootstrap": {
+        "observed_diff": -0.021388380991989475,
+        "p_two_sided": 0.0,
+        "ci95_low": -0.023005076146292724,
+        "ci95_high": -0.01971986344031693,
+        "n_docs": 394,
+        "n_resamples": 2000
+      }
+    },
+    "elx": {
+      "n_docs": 84,
+      "folds": [
+        {
+          "fold": 1,
+          "tp_f1": 0.9803439803439805,
+          "tp_theta": 0.9,
+          "morf_f1": 0.9655172413793104
+        },
+        {
+          "fold": 2,
+          "tp_f1": 0.9938971229293809,
+          "tp_theta": 0.95,
+          "morf_f1": 0.9918128654970759
+        },
+        {
+          "fold": 3,
+          "tp_f1": 0.9941860465116279,
+          "tp_theta": 0.95,
+          "morf_f1": 0.9885225885225885
+        },
+        {
+          "fold": 4,
+          "tp_f1": 0.9846827133479212,
+          "tp_theta": 0.95,
+          "morf_f1": 0.9853875476493011
+        },
+        {
+          "fold": 5,
+          "tp_f1": 0.9899923017705928,
+          "tp_theta": 0.95,
+          "morf_f1": 0.9918950212273253
+        }
+      ],
+      "tp_f1_foldmean": 0.9886204329807006,
+      "tp_f1_foldstd": 0.005379718188178118,
+      "morf_f1_foldmean": 0.9846270528551203,
+      "morf_f1_foldstd": 0.009852895134874324,
+      "tp_f1_pooled": 0.9885294792383574,
+      "morf_f1_pooled": 0.9838044929471178,
+      "diff_tp_minus_morf": 0.00472498629123963,
+      "bootstrap": {
+        "observed_diff": 0.00472498629123963,
+        "p_two_sided": 0.194,
+        "ci95_low": -0.0020252652878913536,
+        "ci95_high": 0.011721087047048207,
+        "n_docs": 84,
+        "n_resamples": 2000
+      }
+    }
+  }
+}

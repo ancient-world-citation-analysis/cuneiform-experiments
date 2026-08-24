@@ -1,0 +1,14 @@
+{
+  "experiment": "N: inventory clamp at source-selected corpusweight 0.5",
+  "results": {
+    "f1_akk_mean": 0.7322123645500281,
+    "f1_elx_mean": 0.9941937338315606,
+    "f1_akk_std": 0.0,
+    "f1_elx_std": 1.1102230246251565e-16
+  },
+  "reference": {
+    "clamped_cw1.0->akk": 0.2825,
+    "unclamped_cw0.5->akk (Exp L)": 0.9767,
+    "unclamped_cw1.0->akk": 0.8568
+  }
+}

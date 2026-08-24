@@ -1,8 +1,8 @@
 # Reproduction code: *What Transfers Across Cuneiform? Script-Level Substrate and Language-Specific Regularities via Segmentation and Representation*
 
-**Anonymous submission** &middot; EMNLP 2026 (ARR)
+**Chuanjun Zhou and Adam Anderson** &middot; **EMNLP 2026 Main Conference**
 
-**Anonymous mirror for review:** <https://anonymous.4open.science/r/cuneiform-experiments>
+**Camera-ready experiments** (review-period controls, robustness analyses, and the Old Babylonian case study) live in [`camera_ready_experiments/`](camera_ready_experiments/) with a full experiment-to-paper index.
 
 This repository contains the code, curated data, and pre-computed result
 artifacts needed to reproduce the experiments reported in the paper. The
@@ -25,8 +25,8 @@ regularity:
 
 The companion library used by these notebooks — Unicode conversion, sign-list
 loaders, the `CuneiSeg` transitional-probability segmenter — is released as a
-separate anonymous package:
-<https://anonymous.4open.science/r/cunei-tools>.
+separate package:
+<https://github.com/ancient-world-citation-analysis/cunei-tools>.
 
 ---
 
@@ -61,7 +61,7 @@ exporting `CUNEI_DATA=/your/data/dir` before launching Jupyter.
 The pipeline was developed and tested on Python 3.10.
 
 ```bash
-git clone <this anonymous repo URL>
+git clone https://github.com/ancient-world-citation-analysis/cuneiform-experiments
 cd cuneiform-experiments
 
 python -m venv .venv
@@ -69,8 +69,8 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 
-# Companion library (separate anonymous mirror)
-pip install git+https://anonymous.4open.science/r/cunei-tools
+# Companion library
+pip install git+https://github.com/ancient-world-citation-analysis/cunei-tools
 
 # Point the notebooks at your data directory
 export CUNEI_DATA=/path/to/cuneiform/data/

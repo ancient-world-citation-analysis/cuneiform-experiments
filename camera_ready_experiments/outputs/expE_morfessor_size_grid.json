@@ -1,0 +1,901 @@
+{
+  "experiment": "E: Morfessor cross-language transfer vs source size",
+  "protocol": {
+    "subsampling": "document-level shuffled prefix (notebook 04)",
+    "morfessor_corpusweight": 1.0,
+    "eval": "zero-shot on full target corpora",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ]
+  },
+  "grid": [
+    {
+      "source": "akk",
+      "budget": "13K",
+      "seed": 42,
+      "actual_tokens": 13372,
+      "n_docs": 71,
+      "lexicon_types": 391,
+      "f1_sux": 0.7556281615866328,
+      "f1_elx": 0.9662018435358072,
+      "wall_s": 41.26252007484436
+    },
+    {
+      "source": "akk",
+      "budget": "13K",
+      "seed": 43,
+      "actual_tokens": 13507,
+      "n_docs": 79,
+      "lexicon_types": 382,
+      "f1_sux": 0.7185923446862043,
+      "f1_elx": 0.9349638011802639,
+      "wall_s": 41.357481956481934
+    },
+    {
+      "source": "akk",
+      "budget": "13K",
+      "seed": 44,
+      "actual_tokens": 13765,
+      "n_docs": 62,
+      "lexicon_types": 404,
+      "f1_sux": 0.7464499090830375,
+      "f1_elx": 0.9366381143308425,
+      "wall_s": 41.734461069107056
+    },
+    {
+      "source": "akk",
+      "budget": "13K",
+      "seed": 45,
+      "actual_tokens": 16414,
+      "n_docs": 76,
+      "lexicon_types": 403,
+      "f1_sux": 0.7701373928355292,
+      "f1_elx": 0.9704636385031772,
+      "wall_s": 45.57782602310181
+    },
+    {
+      "source": "akk",
+      "budget": "13K",
+      "seed": 46,
+      "actual_tokens": 13370,
+      "n_docs": 23,
+      "lexicon_types": 365,
+      "f1_sux": 0.7232490638941634,
+      "f1_elx": 0.9650564654407852,
+      "wall_s": 46.171704053878784
+    },
+    {
+      "source": "akk",
+      "budget": "25K",
+      "seed": 42,
+      "actual_tokens": 25139,
+      "n_docs": 141,
+      "lexicon_types": 438,
+      "f1_sux": 0.8172464428407141,
+      "f1_elx": 0.9725158562367865,
+      "wall_s": 45.29085898399353
+    },
+    {
+      "source": "akk",
+      "budget": "25K",
+      "seed": 43,
+      "actual_tokens": 25526,
+      "n_docs": 155,
+      "lexicon_types": 447,
+      "f1_sux": 0.8156712735707492,
+      "f1_elx": 0.9688255053332548,
+      "wall_s": 45.89486503601074
+    },
+    {
+      "source": "akk",
+      "budget": "25K",
+      "seed": 44,
+      "actual_tokens": 25300,
+      "n_docs": 128,
+      "lexicon_types": 475,
+      "f1_sux": 0.8447275810826671,
+      "f1_elx": 0.9730015260007042,
+      "wall_s": 46.424468994140625
+    },
+    {
+      "source": "akk",
+      "budget": "25K",
+      "seed": 45,
+      "actual_tokens": 25115,
+      "n_docs": 117,
+      "lexicon_types": 439,
+      "f1_sux": 0.8180031200720691,
+      "f1_elx": 0.9758267486098918,
+      "wall_s": 45.308655738830566
+    },
+    {
+      "source": "akk",
+      "budget": "25K",
+      "seed": 46,
+      "actual_tokens": 25901,
+      "n_docs": 84,
+      "lexicon_types": 432,
+      "f1_sux": 0.8353711135905677,
+      "f1_elx": 0.974443141852286,
+      "wall_s": 45.17570900917053
+    },
+    {
+      "source": "akk",
+      "budget": "5K",
+      "seed": 42,
+      "actual_tokens": 6579,
+      "n_docs": 37,
+      "lexicon_types": 319,
+      "f1_sux": 0.6185604910250467,
+      "f1_elx": 0.7574703669529421,
+      "wall_s": 44.95045828819275
+    },
+    {
+      "source": "akk",
+      "budget": "5K",
+      "seed": 43,
+      "actual_tokens": 5090,
+      "n_docs": 34,
+      "lexicon_types": 312,
+      "f1_sux": 0.603384699221943,
+      "f1_elx": 0.7775371935461338,
+      "wall_s": 44.62973999977112
+    },
+    {
+      "source": "akk",
+      "budget": "5K",
+      "seed": 44,
+      "actual_tokens": 5114,
+      "n_docs": 20,
+      "lexicon_types": 326,
+      "f1_sux": 0.6319196525430081,
+      "f1_elx": 0.8239086635325722,
+      "wall_s": 44.928478956222534
+    },
+    {
+      "source": "akk",
+      "budget": "5K",
+      "seed": 45,
+      "actual_tokens": 5055,
+      "n_docs": 39,
+      "lexicon_types": 303,
+      "f1_sux": 0.6422954220734739,
+      "f1_elx": 0.9017565872020076,
+      "wall_s": 44.55967712402344
+    },
+    {
+      "source": "akk",
+      "budget": "5K",
+      "seed": 46,
+      "actual_tokens": 6867,
+      "n_docs": 11,
+      "lexicon_types": 302,
+      "f1_sux": 0.5808309811634395,
+      "f1_elx": 0.8674262040393579,
+      "wall_s": 40.48006796836853
+    },
+    {
+      "source": "akk",
+      "budget": "full",
+      "seed": 42,
+      "actual_tokens": 2441623,
+      "n_docs": 13502,
+      "lexicon_types": 1487,
+      "f1_sux": 0.9813007951016453,
+      "f1_elx": 0.9835589380119676,
+      "wall_s": 46.85824513435364
+    },
+    {
+      "source": "akk",
+      "budget": "full",
+      "seed": 43,
+      "actual_tokens": 2441623,
+      "n_docs": 13502,
+      "lexicon_types": 1487,
+      "f1_sux": 0.9812738152050219,
+      "f1_elx": 0.9835589380119676,
+      "wall_s": 47.04058599472046
+    },
+    {
+      "source": "akk",
+      "budget": "full",
+      "seed": 44,
+      "actual_tokens": 2441623,
+      "n_docs": 13502,
+      "lexicon_types": 1487,
+      "f1_sux": 0.9812738152050219,
+      "f1_elx": 0.9835589380119676,
+      "wall_s": 47.01947999000549
+    },
+    {
+      "source": "akk",
+      "budget": "full",
+      "seed": 45,
+      "actual_tokens": 2441623,
+      "n_docs": 13502,
+      "lexicon_types": 1487,
+      "f1_sux": 0.9813007951016453,
+      "f1_elx": 0.9835589380119676,
+      "wall_s": 47.06653189659119
+    },
+    {
+      "source": "akk",
+      "budget": "full",
+      "seed": 46,
+      "actual_tokens": 2441623,
+      "n_docs": 13502,
+      "lexicon_types": 1487,
+      "f1_sux": 0.9813007951016453,
+      "f1_elx": 0.9835589380119676,
+      "wall_s": 48.0661039352417
+    },
+    {
+      "source": "elx25",
+      "budget": "13K",
+      "seed": 42,
+      "actual_tokens": 17556,
+      "n_docs": 56,
+      "lexicon_types": 412,
+      "f1_akk": 0.5259299721973316,
+      "f1_sux": 0.4407030081511486,
+      "wall_s": 319.60019993782043
+    },
+    {
+      "source": "elx25",
+      "budget": "13K",
+      "seed": 43,
+      "actual_tokens": 14329,
+      "n_docs": 71,
+      "lexicon_types": 410,
+      "f1_akk": 0.5950687489149027,
+      "f1_sux": 0.4734067614298033,
+      "wall_s": 326.60240292549133
+    },
+    {
+      "source": "elx25",
+      "budget": "13K",
+      "seed": 44,
+      "actual_tokens": 13003,
+      "n_docs": 135,
+      "lexicon_types": 458,
+      "f1_akk": 0.6035904286139873,
+      "f1_sux": 0.4950679322538618,
+      "wall_s": 326.3579339981079
+    },
+    {
+      "source": "elx25",
+      "budget": "13K",
+      "seed": 45,
+      "actual_tokens": 13193,
+      "n_docs": 117,
+      "lexicon_types": 447,
+      "f1_akk": 0.6345516767067442,
+      "f1_sux": 0.49528060387266165,
+      "wall_s": 325.1714129447937
+    },
+    {
+      "source": "elx25",
+      "budget": "13K",
+      "seed": 46,
+      "actual_tokens": 13015,
+      "n_docs": 121,
+      "lexicon_types": 392,
+      "f1_akk": 0.5735580772746023,
+      "f1_sux": 0.48661169398786785,
+      "wall_s": 325.4277398586273
+    },
+    {
+      "source": "elx25",
+      "budget": "25K",
+      "seed": 42,
+      "actual_tokens": 25083,
+      "n_docs": 128,
+      "lexicon_types": 537,
+      "f1_akk": 0.6335694539617253,
+      "f1_sux": 0.5148095361492615,
+      "wall_s": 297.53043580055237
+    },
+    {
+      "source": "elx25",
+      "budget": "25K",
+      "seed": 43,
+      "actual_tokens": 25072,
+      "n_docs": 155,
+      "lexicon_types": 537,
+      "f1_akk": 0.6374876220896395,
+      "f1_sux": 0.5176769254972275,
+      "wall_s": 299.8259439468384
+    },
+    {
+      "source": "elx25",
+      "budget": "25K",
+      "seed": 44,
+      "actual_tokens": 25041,
+      "n_docs": 190,
+      "lexicon_types": 559,
+      "f1_akk": 0.6515863925046274,
+      "f1_sux": 0.5449304519461198,
+      "wall_s": 296.49307012557983
+    },
+    {
+      "source": "elx25",
+      "budget": "25K",
+      "seed": 45,
+      "actual_tokens": 28876,
+      "n_docs": 175,
+      "lexicon_types": 600,
+      "f1_akk": 0.6506065689375744,
+      "f1_sux": 0.5032347635347598,
+      "wall_s": 306.35323309898376
+    },
+    {
+      "source": "elx25",
+      "budget": "25K",
+      "seed": 46,
+      "actual_tokens": 25024,
+      "n_docs": 237,
+      "lexicon_types": 556,
+      "f1_akk": 0.6841736875113392,
+      "f1_sux": 0.5540829450159348,
+      "wall_s": 299.88462686538696
+    },
+    {
+      "source": "elx25",
+      "budget": "5K",
+      "seed": 42,
+      "actual_tokens": 6126,
+      "n_docs": 46,
+      "lexicon_types": 306,
+      "f1_akk": 0.5313957306962978,
+      "f1_sux": 0.46426000527593586,
+      "wall_s": 350.0860872268677
+    },
+    {
+      "source": "elx25",
+      "budget": "5K",
+      "seed": 43,
+      "actual_tokens": 5136,
+      "n_docs": 48,
+      "lexicon_types": 311,
+      "f1_akk": 0.5450653049779366,
+      "f1_sux": 0.4182486715769333,
+      "wall_s": 365.2434060573578
+    },
+    {
+      "source": "elx25",
+      "budget": "5K",
+      "seed": 44,
+      "actual_tokens": 5157,
+      "n_docs": 55,
+      "lexicon_types": 291,
+      "f1_akk": 0.5114638245636175,
+      "f1_sux": 0.4029066611372696,
+      "wall_s": 329.6315748691559
+    },
+    {
+      "source": "elx25",
+      "budget": "5K",
+      "seed": 45,
+      "actual_tokens": 5124,
+      "n_docs": 45,
+      "lexicon_types": 281,
+      "f1_akk": 0.5211866630087535,
+      "f1_sux": 0.403325928927013,
+      "wall_s": 328.5311861038208
+    },
+    {
+      "source": "elx25",
+      "budget": "5K",
+      "seed": 46,
+      "actual_tokens": 5088,
+      "n_docs": 45,
+      "lexicon_types": 260,
+      "f1_akk": 0.4763051096469011,
+      "f1_sux": 0.38311703628223814,
+      "wall_s": 319.92211389541626
+    },
+    {
+      "source": "elx25",
+      "budget": "full",
+      "seed": 42,
+      "actual_tokens": 111733,
+      "n_docs": 871,
+      "lexicon_types": 1190,
+      "f1_akk": 0.7830563049428212,
+      "f1_sux": 0.7122889224028389,
+      "wall_s": 300.33785605430603
+    },
+    {
+      "source": "elx25",
+      "budget": "full",
+      "seed": 43,
+      "actual_tokens": 111733,
+      "n_docs": 871,
+      "lexicon_types": 1190,
+      "f1_akk": 0.7835237581427045,
+      "f1_sux": 0.7132392465644243,
+      "wall_s": 300.54277086257935
+    },
+    {
+      "source": "elx25",
+      "budget": "full",
+      "seed": 44,
+      "actual_tokens": 111733,
+      "n_docs": 871,
+      "lexicon_types": 1190,
+      "f1_akk": 0.7827543751950533,
+      "f1_sux": 0.7118861083173439,
+      "wall_s": 305.1772139072418
+    },
+    {
+      "source": "elx25",
+      "budget": "full",
+      "seed": 45,
+      "actual_tokens": 111733,
+      "n_docs": 871,
+      "lexicon_types": 1190,
+      "f1_akk": 0.7829845804188954,
+      "f1_sux": 0.7122220346497827,
+      "wall_s": 298.5796740055084
+    },
+    {
+      "source": "elx25",
+      "budget": "full",
+      "seed": 46,
+      "actual_tokens": 111733,
+      "n_docs": 871,
+      "lexicon_types": 1190,
+      "f1_akk": 0.7833218307705753,
+      "f1_sux": 0.7127537860455457,
+      "wall_s": 297.12981510162354
+    },
+    {
+      "source": "elx_orig",
+      "budget": "5K",
+      "seed": 42,
+      "actual_tokens": 5042,
+      "n_docs": 44,
+      "lexicon_types": 121,
+      "f1_akk": 0.26659891995009705,
+      "f1_sux": 0.24881949577071527,
+      "wall_s": 306.26429080963135
+    },
+    {
+      "source": "elx_orig",
+      "budget": "5K",
+      "seed": 43,
+      "actual_tokens": 5112,
+      "n_docs": 49,
+      "lexicon_types": 117,
+      "f1_akk": 0.25819580259336566,
+      "f1_sux": 0.23213313632475313,
+      "wall_s": 315.6775679588318
+    },
+    {
+      "source": "elx_orig",
+      "budget": "5K",
+      "seed": 44,
+      "actual_tokens": 5003,
+      "n_docs": 50,
+      "lexicon_types": 124,
+      "f1_akk": 0.27882392062546885,
+      "f1_sux": 0.2503647819386141,
+      "wall_s": 306.2998538017273
+    },
+    {
+      "source": "elx_orig",
+      "budget": "5K",
+      "seed": 45,
+      "actual_tokens": 5065,
+      "n_docs": 47,
+      "lexicon_types": 123,
+      "f1_akk": 0.27832886513663896,
+      "f1_sux": 0.24285269113787786,
+      "wall_s": 314.9946460723877
+    },
+    {
+      "source": "elx_orig",
+      "budget": "5K",
+      "seed": 46,
+      "actual_tokens": 5001,
+      "n_docs": 49,
+      "lexicon_types": 131,
+      "f1_akk": 0.2812898195432738,
+      "f1_sux": 0.25838851674641145,
+      "wall_s": 308.0317749977112
+    },
+    {
+      "source": "elx_orig",
+      "budget": "full",
+      "seed": 42,
+      "actual_tokens": 8831,
+      "n_docs": 84,
+      "lexicon_types": 142,
+      "f1_akk": 0.3037836501180821,
+      "f1_sux": 0.26736163096685134,
+      "wall_s": 308.71335101127625
+    },
+    {
+      "source": "elx_orig",
+      "budget": "full",
+      "seed": 43,
+      "actual_tokens": 8831,
+      "n_docs": 84,
+      "lexicon_types": 142,
+      "f1_akk": 0.3037836501180821,
+      "f1_sux": 0.26736163096685134,
+      "wall_s": 317.9886381626129
+    },
+    {
+      "source": "elx_orig",
+      "budget": "full",
+      "seed": 44,
+      "actual_tokens": 8831,
+      "n_docs": 84,
+      "lexicon_types": 142,
+      "f1_akk": 0.3037836501180821,
+      "f1_sux": 0.26736163096685134,
+      "wall_s": 315.76577496528625
+    },
+    {
+      "source": "elx_orig",
+      "budget": "full",
+      "seed": 45,
+      "actual_tokens": 8831,
+      "n_docs": 84,
+      "lexicon_types": 142,
+      "f1_akk": 0.3037836501180821,
+      "f1_sux": 0.26736163096685134,
+      "wall_s": 345.48258996009827
+    },
+    {
+      "source": "elx_orig",
+      "budget": "full",
+      "seed": 46,
+      "actual_tokens": 8831,
+      "n_docs": 84,
+      "lexicon_types": 142,
+      "f1_akk": 0.3037836501180821,
+      "f1_sux": 0.26736163096685134,
+      "wall_s": 345.9103989601135
+    },
+    {
+      "source": "sux",
+      "budget": "13K",
+      "seed": 42,
+      "actual_tokens": 13479,
+      "n_docs": 15,
+      "lexicon_types": 444,
+      "f1_akk": 0.6041057394078854,
+      "f1_elx": 0.736058942502167,
+      "wall_s": 271.62770199775696
+    },
+    {
+      "source": "sux",
+      "budget": "13K",
+      "seed": 43,
+      "actual_tokens": 15300,
+      "n_docs": 22,
+      "lexicon_types": 449,
+      "f1_akk": 0.6183503456300145,
+      "f1_elx": 0.8639107015380622,
+      "wall_s": 269.8488247394562
+    },
+    {
+      "source": "sux",
+      "budget": "13K",
+      "seed": 44,
+      "actual_tokens": 15155,
+      "n_docs": 16,
+      "lexicon_types": 446,
+      "f1_akk": 0.5504323046905745,
+      "f1_elx": 0.6365336658354115,
+      "wall_s": 269.4019000530243
+    },
+    {
+      "source": "sux",
+      "budget": "13K",
+      "seed": 45,
+      "actual_tokens": 13809,
+      "n_docs": 21,
+      "lexicon_types": 453,
+      "f1_akk": 0.6330677916881597,
+      "f1_elx": 0.7151354923992069,
+      "wall_s": 271.673219203949
+    },
+    {
+      "source": "sux",
+      "budget": "13K",
+      "seed": 46,
+      "actual_tokens": 13133,
+      "n_docs": 30,
+      "lexicon_types": 414,
+      "f1_akk": 0.569457862755351,
+      "f1_elx": 0.6003839385698289,
+      "wall_s": 274.68115997314453
+    },
+    {
+      "source": "sux",
+      "budget": "25K",
+      "seed": 42,
+      "actual_tokens": 32866,
+      "n_docs": 25,
+      "lexicon_types": 549,
+      "f1_akk": 0.6545297537979287,
+      "f1_elx": 0.737844466887895,
+      "wall_s": 270.5934100151062
+    },
+    {
+      "source": "sux",
+      "budget": "25K",
+      "seed": 43,
+      "actual_tokens": 25912,
+      "n_docs": 41,
+      "lexicon_types": 523,
+      "f1_akk": 0.6796292508884851,
+      "f1_elx": 0.8379383634431455,
+      "wall_s": 270.51736402511597
+    },
+    {
+      "source": "sux",
+      "budget": "25K",
+      "seed": 44,
+      "actual_tokens": 28388,
+      "n_docs": 29,
+      "lexicon_types": 511,
+      "f1_akk": 0.6183702242555769,
+      "f1_elx": 0.6445615122404711,
+      "wall_s": 264.40716791152954
+    },
+    {
+      "source": "sux",
+      "budget": "25K",
+      "seed": 45,
+      "actual_tokens": 32417,
+      "n_docs": 38,
+      "lexicon_types": 539,
+      "f1_akk": 0.7026008369838594,
+      "f1_elx": 0.8290855575623788,
+      "wall_s": 266.36500787734985
+    },
+    {
+      "source": "sux",
+      "budget": "25K",
+      "seed": 46,
+      "actual_tokens": 25041,
+      "n_docs": 46,
+      "lexicon_types": 505,
+      "f1_akk": 0.6544847214653065,
+      "f1_elx": 0.7343750000000001,
+      "wall_s": 267.0413818359375
+    },
+    {
+      "source": "sux",
+      "budget": "5K",
+      "seed": 42,
+      "actual_tokens": 7182,
+      "n_docs": 8,
+      "lexicon_types": 367,
+      "f1_akk": 0.5444293290863631,
+      "f1_elx": 0.6713233619315162,
+      "wall_s": 305.256254196167
+    },
+    {
+      "source": "sux",
+      "budget": "5K",
+      "seed": 43,
+      "actual_tokens": 5780,
+      "n_docs": 5,
+      "lexicon_types": 335,
+      "f1_akk": 0.44356604421518386,
+      "f1_elx": 0.49738085015027905,
+      "wall_s": 303.1561441421509
+    },
+    {
+      "source": "sux",
+      "budget": "5K",
+      "seed": 44,
+      "actual_tokens": 9387,
+      "n_docs": 9,
+      "lexicon_types": 374,
+      "f1_akk": 0.4513328269829875,
+      "f1_elx": 0.5167415444604561,
+      "wall_s": 303.38616490364075
+    },
+    {
+      "source": "sux",
+      "budget": "5K",
+      "seed": 45,
+      "actual_tokens": 5075,
+      "n_docs": 12,
+      "lexicon_types": 316,
+      "f1_akk": 0.5006325642552514,
+      "f1_elx": 0.5972589564799231,
+      "wall_s": 302.4281780719757
+    },
+    {
+      "source": "sux",
+      "budget": "5K",
+      "seed": 46,
+      "actual_tokens": 5000,
+      "n_docs": 12,
+      "lexicon_types": 303,
+      "f1_akk": 0.47072939541253034,
+      "f1_elx": 0.4874211117835221,
+      "wall_s": 270.616201877594
+    },
+    {
+      "source": "sux",
+      "budget": "full",
+      "seed": 42,
+      "actual_tokens": 337972,
+      "n_docs": 394,
+      "lexicon_types": 916,
+      "f1_akk": 0.8568191404900226,
+      "f1_elx": 0.953212875433768,
+      "wall_s": 266.57293796539307
+    },
+    {
+      "source": "sux",
+      "budget": "full",
+      "seed": 43,
+      "actual_tokens": 337972,
+      "n_docs": 394,
+      "lexicon_types": 916,
+      "f1_akk": 0.8596670670824352,
+      "f1_elx": 0.953212875433768,
+      "wall_s": 270.98115515708923
+    },
+    {
+      "source": "sux",
+      "budget": "full",
+      "seed": 44,
+      "actual_tokens": 337972,
+      "n_docs": 394,
+      "lexicon_types": 916,
+      "f1_akk": 0.8590952272333618,
+      "f1_elx": 0.953212875433768,
+      "wall_s": 271.9282500743866
+    },
+    {
+      "source": "sux",
+      "budget": "full",
+      "seed": 45,
+      "actual_tokens": 337972,
+      "n_docs": 394,
+      "lexicon_types": 916,
+      "f1_akk": 0.8564511448907941,
+      "f1_elx": 0.953212875433768,
+      "wall_s": 267.5812268257141
+    },
+    {
+      "source": "sux",
+      "budget": "full",
+      "seed": 46,
+      "actual_tokens": 337972,
+      "n_docs": 394,
+      "lexicon_types": 916,
+      "f1_akk": 0.8594916591869526,
+      "f1_elx": 0.953212875433768,
+      "wall_s": 267.89876890182495
+    }
+  ],
+  "summary": {
+    "akk@5K": {
+      "n_seeds": 5,
+      "actual_tokens_mean": 5741.0,
+      "f1_sux_mean": 0.6153982492053822,
+      "f1_sux_std": 0.021659343724843867,
+      "f1_elx_mean": 0.8256198030546027,
+      "f1_elx_std": 0.05385869667971689
+    },
+    "akk@13K": {
+      "n_seeds": 5,
+      "actual_tokens_mean": 14085.6,
+      "f1_sux_mean": 0.7428113744171134,
+      "f1_sux_std": 0.01946003928346738,
+      "f1_elx_mean": 0.9546647725981752,
+      "f1_elx_std": 0.01551634063132083
+    },
+    "akk@25K": {
+      "n_seeds": 5,
+      "actual_tokens_mean": 25396.2,
+      "f1_sux_mean": 0.8262039062313535,
+      "f1_sux_std": 0.01170973625281289,
+      "f1_elx_mean": 0.9729225556065847,
+      "f1_elx_std": 0.002353889596978068
+    },
+    "akk@full": {
+      "n_seeds": 5,
+      "actual_tokens_mean": 2441623.0,
+      "f1_sux_mean": 0.9812900031429959,
+      "f1_sux_std": 1.3217396008058669e-05,
+      "f1_elx_mean": 0.9835589380119675,
+      "f1_elx_std": 1.1102230246251565e-16
+    },
+    "sux@5K": {
+      "n_seeds": 5,
+      "actual_tokens_mean": 6484.8,
+      "f1_akk_mean": 0.48213803199046323,
+      "f1_akk_std": 0.03684879727383029,
+      "f1_elx_mean": 0.5540251649611394,
+      "f1_elx_std": 0.07023214990203372
+    },
+    "sux@13K": {
+      "n_seeds": 5,
+      "actual_tokens_mean": 14175.2,
+      "f1_akk_mean": 0.5950828088343971,
+      "f1_akk_std": 0.03071141758018206,
+      "f1_elx_mean": 0.7104045481689353,
+      "f1_elx_std": 0.09143971861001443
+    },
+    "sux@25K": {
+      "n_seeds": 5,
+      "actual_tokens_mean": 28924.8,
+      "f1_akk_mean": 0.6619229574782313,
+      "f1_akk_std": 0.02819585109270696,
+      "f1_elx_mean": 0.756760980026778,
+      "f1_elx_std": 0.07108909794990288
+    },
+    "sux@full": {
+      "n_seeds": 5,
+      "actual_tokens_mean": 337972.0,
+      "f1_akk_mean": 0.8583048477767132,
+      "f1_akk_std": 0.0013807536331177056,
+      "f1_elx_mean": 0.9532128754337681,
+      "f1_elx_std": 1.1102230246251565e-16
+    },
+    "elx_orig@5K": {
+      "n_seeds": 5,
+      "actual_tokens_mean": 5044.6,
+      "f1_akk_mean": 0.2726474655697689,
+      "f1_akk_std": 0.008838016148363437,
+      "f1_sux_mean": 0.24651172438367439,
+      "f1_sux_std": 0.008733411440967261
+    },
+    "elx_orig@full": {
+      "n_seeds": 5,
+      "actual_tokens_mean": 8831.0,
+      "f1_akk_mean": 0.3037836501180821,
+      "f1_akk_std": 0.0,
+      "f1_sux_mean": 0.26736163096685134,
+      "f1_sux_std": 0.0
+    },
+    "elx25@5K": {
+      "n_seeds": 5,
+      "actual_tokens_mean": 5326.2,
+      "f1_akk_mean": 0.5170833265787012,
+      "f1_akk_std": 0.023234092087505136,
+      "f1_sux_mean": 0.41437166063987796,
+      "f1_sux_std": 0.027328315318499625
+    },
+    "elx25@13K": {
+      "n_seeds": 5,
+      "actual_tokens_mean": 14219.2,
+      "f1_akk_mean": 0.5865397807415136,
+      "f1_akk_std": 0.036085131458303187,
+      "f1_sux_mean": 0.47821399993906866,
+      "f1_sux_std": 0.020376600877640844
+    },
+    "elx25@25K": {
+      "n_seeds": 5,
+      "actual_tokens_mean": 25819.2,
+      "f1_akk_mean": 0.6514847450009811,
+      "f1_akk_std": 0.017811376087631642,
+      "f1_sux_mean": 0.5269469244286608,
+      "f1_sux_std": 0.019262847785185257
+    },
+    "elx25@full": {
+      "n_seeds": 5,
+      "actual_tokens_mean": 111733.0,
+      "f1_akk_mean": 0.78312816989401,
+      "f1_akk_std": 0.00026814159810009593,
+      "f1_sux_mean": 0.7124780195959871,
+      "f1_sux_std": 0.00047056532704886877
+    }
+  }
+}

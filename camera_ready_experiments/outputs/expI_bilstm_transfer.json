@@ -1,0 +1,173 @@
+{
+  "experiment": "I: zero-shot cross-language transfer of the supervised BiLSTM vs TP vs Morfessor (AKK source)",
+  "protocol": {
+    "pool": "notebook 04 train pool (test split removed)",
+    "zero_shot": "no target tuning; BiLSTM threshold from source val slice; TP theta from source",
+    "configs": [
+      {
+        "budget": 13000,
+        "seeds": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      },
+      {
+        "budget": 50000,
+        "seeds": [
+          42,
+          43,
+          44
+        ]
+      }
+    ]
+  },
+  "runs": [
+    {
+      "budget": 13000,
+      "seed": 42,
+      "actual_tokens": 13022,
+      "bilstm_threshold": 0.44999999999999996,
+      "bilstm_epochs": 6,
+      "bilstm_f1_sux": 0.9679544894108741,
+      "bilstm_f1_elx": 0.9944292860391087,
+      "tp_f1_sux": 0.9671458259182291,
+      "tp_f1_elx": 0.9943149516770893,
+      "tp_src_theta": 0.6,
+      "morf_f1_sux": 0.7614740820734343,
+      "morf_f1_elx": 0.9583903803797844
+    },
+    {
+      "budget": 13000,
+      "seed": 43,
+      "actual_tokens": 13101,
+      "bilstm_threshold": 0.49999999999999994,
+      "bilstm_epochs": 6,
+      "bilstm_f1_sux": 0.9677115897553561,
+      "bilstm_f1_elx": 0.9944858166107668,
+      "tp_f1_sux": 0.9673430145792675,
+      "tp_f1_elx": 0.994372761893935,
+      "tp_src_theta": 0.6,
+      "morf_f1_sux": 0.7662780980439371,
+      "morf_f1_elx": 0.9659164746884046
+    },
+    {
+      "budget": 13000,
+      "seed": 44,
+      "actual_tokens": 13095,
+      "bilstm_threshold": 0.49999999999999994,
+      "bilstm_epochs": 6,
+      "bilstm_f1_sux": 0.9679544894108741,
+      "bilstm_f1_elx": 0.9944292860391087,
+      "tp_f1_sux": 0.9671555119664906,
+      "tp_f1_elx": 0.9943149516770893,
+      "tp_src_theta": 0.8,
+      "morf_f1_sux": 0.716179567707371,
+      "morf_f1_elx": 0.9609263657957244
+    },
+    {
+      "budget": 13000,
+      "seed": 45,
+      "actual_tokens": 13341,
+      "bilstm_threshold": 0.49999999999999994,
+      "bilstm_epochs": 6,
+      "bilstm_f1_sux": 0.9671982025154453,
+      "bilstm_f1_elx": 0.9940848595154136,
+      "tp_f1_sux": 0.9675071715433162,
+      "tp_f1_elx": 0.9939724781075855,
+      "tp_src_theta": 0.75,
+      "morf_f1_sux": 0.7466333751875345,
+      "morf_f1_elx": 0.9454852117342329
+    },
+    {
+      "budget": 13000,
+      "seed": 46,
+      "actual_tokens": 14126,
+      "bilstm_threshold": 0.35,
+      "bilstm_epochs": 30,
+      "bilstm_f1_sux": 0.9684604103672639,
+      "bilstm_f1_elx": 0.9938433473948238,
+      "tp_f1_sux": 0.967541177871476,
+      "tp_f1_elx": 0.9944292860391087,
+      "tp_src_theta": 0.7,
+      "morf_f1_sux": 0.774504949625837,
+      "morf_f1_elx": 0.9725794140097469
+    },
+    {
+      "budget": 50000,
+      "seed": 42,
+      "actual_tokens": 50750,
+      "bilstm_threshold": 0.49999999999999994,
+      "bilstm_epochs": 30,
+      "bilstm_f1_sux": 0.9744187935977344,
+      "bilstm_f1_elx": 0.9943399462580756,
+      "tp_f1_sux": 0.9676540003873774,
+      "tp_f1_elx": 0.9945423536100058,
+      "tp_src_theta": 0.7,
+      "morf_f1_sux": 0.9062086527477562,
+      "morf_f1_elx": 0.977621969033012
+    },
+    {
+      "budget": 50000,
+      "seed": 43,
+      "actual_tokens": 50097,
+      "bilstm_threshold": 0.44999999999999996,
+      "bilstm_epochs": 30,
+      "bilstm_f1_sux": 0.9733620308570848,
+      "bilstm_f1_elx": 0.993647341612774,
+      "tp_f1_sux": 0.967477621492551,
+      "tp_f1_elx": 0.9944292860391087,
+      "tp_src_theta": 0.7,
+      "morf_f1_sux": 0.9094674694115362,
+      "morf_f1_elx": 0.9771411867874891
+    },
+    {
+      "budget": 50000,
+      "seed": 44,
+      "actual_tokens": 50488,
+      "bilstm_threshold": 0.5499999999999999,
+      "bilstm_epochs": 30,
+      "bilstm_f1_sux": 0.9740906985753525,
+      "bilstm_f1_elx": 0.9916767120142357,
+      "tp_f1_sux": 0.9669871799473645,
+      "tp_f1_elx": 0.9944286526435475,
+      "tp_src_theta": 0.55,
+      "morf_f1_sux": 0.9027660163948026,
+      "morf_f1_elx": 0.9763632108588813
+    }
+  ],
+  "summary": {
+    "13000": {
+      "n_seeds": 5,
+      "bilstm_f1_sux_mean": 0.9678558362919627,
+      "bilstm_f1_sux_std": 0.000409454255224631,
+      "bilstm_f1_elx_mean": 0.9942545191198443,
+      "bilstm_f1_elx_std": 0.0002499728186332781,
+      "tp_f1_sux_mean": 0.9673385403757558,
+      "tp_f1_sux_std": 0.0001674256280140905,
+      "tp_f1_elx_mean": 0.9942808858789615,
+      "tp_f1_elx_std": 0.00015993756301032944,
+      "morf_f1_sux_mean": 0.7530140145276227,
+      "morf_f1_sux_std": 0.020527337756004065,
+      "morf_f1_elx_mean": 0.9606595693215786,
+      "morf_f1_elx_std": 0.009002213932434956
+    },
+    "50000": {
+      "n_seeds": 3,
+      "bilstm_f1_sux_mean": 0.9739571743433907,
+      "bilstm_f1_sux_std": 0.00044163213416980544,
+      "bilstm_f1_elx_mean": 0.9932213332950285,
+      "bilstm_f1_elx_std": 0.0011282187951166683,
+      "tp_f1_sux_mean": 0.967372933942431,
+      "tp_f1_sux_std": 0.00028211343719308367,
+      "tp_f1_elx_mean": 0.9944667640975539,
+      "tp_f1_elx_std": 5.3450482330250065e-05,
+      "morf_f1_sux_mean": 0.9061473795180316,
+      "morf_f1_sux_std": 0.00273619979051028,
+      "morf_f1_elx_mean": 0.9770421222264609,
+      "morf_f1_elx_std": 0.0005186382012372999
+    }
+  }
+}

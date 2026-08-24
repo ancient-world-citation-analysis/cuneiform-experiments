@@ -12,3 +12,14 @@ alltexts_SUX.csv
 # local artifacts
 *.log
 .env
+
+# rebuttal period: never push (internal strategy, review anonymity, identifying paths)
+rebuttal_experiments/
+newelamitedata.csv
+EMNLP/
+EMNLP_Submission_version.pdf
+Association_for_Computational_Linguistics__ACL__conference.zip
+errors-EMNLP*
+
+# camera-ready internal working area (tex, drafts, refchecks) — not released
+camera_ready/

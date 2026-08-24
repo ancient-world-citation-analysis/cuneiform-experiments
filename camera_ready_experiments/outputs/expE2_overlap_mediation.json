@@ -1,0 +1,1128 @@
+{
+  "experiment": "E2: lexicon-coverage mediation of Morfessor transfer",
+  "n_cells": 140,
+  "pearson_r": 0.9140740909240668,
+  "spearman_rho": 0.9245150991668672,
+  "pairs": [
+    {
+      "source": "akk",
+      "budget": "13K",
+      "seed": 42,
+      "target": "sux",
+      "coverage": 0.9375658338560591,
+      "f1": 0.7556281615866328
+    },
+    {
+      "source": "akk",
+      "budget": "13K",
+      "seed": 42,
+      "target": "elx",
+      "coverage": 0.9895821537764693,
+      "f1": 0.9662018435358072
+    },
+    {
+      "source": "akk",
+      "budget": "13K",
+      "seed": 43,
+      "target": "sux",
+      "coverage": 0.9298580947534115,
+      "f1": 0.7185923446862043
+    },
+    {
+      "source": "akk",
+      "budget": "13K",
+      "seed": 43,
+      "target": "elx",
+      "coverage": 0.9861850300079267,
+      "f1": 0.9349638011802639
+    },
+    {
+      "source": "akk",
+      "budget": "13K",
+      "seed": 44,
+      "target": "sux",
+      "coverage": 0.9387197756027127,
+      "f1": 0.7464499090830375
+    },
+    {
+      "source": "akk",
+      "budget": "13K",
+      "seed": 44,
+      "target": "elx",
+      "coverage": 0.9814290567319669,
+      "f1": 0.9366381143308425
+    },
+    {
+      "source": "akk",
+      "budget": "13K",
+      "seed": 45,
+      "target": "sux",
+      "coverage": 0.9413649651450416,
+      "f1": 0.7701373928355292
+    },
+    {
+      "source": "akk",
+      "budget": "13K",
+      "seed": 45,
+      "target": "elx",
+      "coverage": 0.9895821537764693,
+      "f1": 0.9704636385031772
+    },
+    {
+      "source": "akk",
+      "budget": "13K",
+      "seed": 46,
+      "target": "sux",
+      "coverage": 0.9307339069508717,
+      "f1": 0.7232490638941634
+    },
+    {
+      "source": "akk",
+      "budget": "13K",
+      "seed": 46,
+      "target": "elx",
+      "coverage": 0.989242441399615,
+      "f1": 0.9650564654407852
+    },
+    {
+      "source": "akk",
+      "budget": "25K",
+      "seed": 42,
+      "target": "sux",
+      "coverage": 0.9501970577444285,
+      "f1": 0.8172464428407141
+    },
+    {
+      "source": "akk",
+      "budget": "25K",
+      "seed": 42,
+      "target": "elx",
+      "coverage": 0.9895821537764693,
+      "f1": 0.9725158562367865
+    },
+    {
+      "source": "akk",
+      "budget": "25K",
+      "seed": 43,
+      "target": "sux",
+      "coverage": 0.9528895884866202,
+      "f1": 0.8156712735707492
+    },
+    {
+      "source": "akk",
+      "budget": "25K",
+      "seed": 43,
+      "target": "elx",
+      "coverage": 0.9894689163175179,
+      "f1": 0.9688255053332548
+    },
+    {
+      "source": "akk",
+      "budget": "25K",
+      "seed": 44,
+      "target": "sux",
+      "coverage": 0.9570792846744701,
+      "f1": 0.8447275810826671
+    },
+    {
+      "source": "akk",
+      "budget": "25K",
+      "seed": 44,
+      "target": "elx",
+      "coverage": 0.9895821537764693,
+      "f1": 0.9730015260007042
+    },
+    {
+      "source": "akk",
+      "budget": "25K",
+      "seed": 45,
+      "target": "sux",
+      "coverage": 0.9484483921744996,
+      "f1": 0.8180031200720691
+    },
+    {
+      "source": "akk",
+      "budget": "25K",
+      "seed": 45,
+      "target": "elx",
+      "coverage": 0.9895821537764693,
+      "f1": 0.9758267486098918
+    },
+    {
+      "source": "akk",
+      "budget": "25K",
+      "seed": 46,
+      "target": "sux",
+      "coverage": 0.9567922786503024,
+      "f1": 0.8353711135905677
+    },
+    {
+      "source": "akk",
+      "budget": "25K",
+      "seed": 46,
+      "target": "elx",
+      "coverage": 0.9896953912354207,
+      "f1": 0.974443141852286
+    },
+    {
+      "source": "akk",
+      "budget": "5K",
+      "seed": 42,
+      "target": "sux",
+      "coverage": 0.9087823843395311,
+      "f1": 0.6185604910250467
+    },
+    {
+      "source": "akk",
+      "budget": "5K",
+      "seed": 42,
+      "target": "elx",
+      "coverage": 0.9668214245272336,
+      "f1": 0.7574703669529421
+    },
+    {
+      "source": "akk",
+      "budget": "5K",
+      "seed": 43,
+      "target": "sux",
+      "coverage": 0.9112115796574864,
+      "f1": 0.603384699221943
+    },
+    {
+      "source": "akk",
+      "budget": "5K",
+      "seed": 43,
+      "target": "elx",
+      "coverage": 0.9675008492809422,
+      "f1": 0.7775371935461338
+    },
+    {
+      "source": "akk",
+      "budget": "5K",
+      "seed": 44,
+      "target": "sux",
+      "coverage": 0.9165167528671014,
+      "f1": 0.6319196525430081
+    },
+    {
+      "source": "akk",
+      "budget": "5K",
+      "seed": 44,
+      "target": "elx",
+      "coverage": 0.9778054580455214,
+      "f1": 0.8239086635325722
+    },
+    {
+      "source": "akk",
+      "budget": "5K",
+      "seed": 45,
+      "target": "sux",
+      "coverage": 0.9091877433633555,
+      "f1": 0.6422954220734739
+    },
+    {
+      "source": "akk",
+      "budget": "5K",
+      "seed": 45,
+      "target": "elx",
+      "coverage": 0.9813158192730155,
+      "f1": 0.9017565872020076
+    },
+    {
+      "source": "akk",
+      "budget": "5K",
+      "seed": 46,
+      "target": "sux",
+      "coverage": 0.9042997644775307,
+      "f1": 0.5808309811634395
+    },
+    {
+      "source": "akk",
+      "budget": "5K",
+      "seed": 46,
+      "target": "elx",
+      "coverage": 0.9766730834560072,
+      "f1": 0.8674262040393579
+    },
+    {
+      "source": "akk",
+      "budget": "full",
+      "seed": 42,
+      "target": "sux",
+      "coverage": 0.9945587208407797,
+      "f1": 0.9813007951016453
+    },
+    {
+      "source": "akk",
+      "budget": "full",
+      "seed": 42,
+      "target": "elx",
+      "coverage": 0.9896953912354207,
+      "f1": 0.9835589380119676
+    },
+    {
+      "source": "akk",
+      "budget": "full",
+      "seed": 43,
+      "target": "sux",
+      "coverage": 0.9945587208407797,
+      "f1": 0.9812738152050219
+    },
+    {
+      "source": "akk",
+      "budget": "full",
+      "seed": 43,
+      "target": "elx",
+      "coverage": 0.9896953912354207,
+      "f1": 0.9835589380119676
+    },
+    {
+      "source": "akk",
+      "budget": "full",
+      "seed": 44,
+      "target": "sux",
+      "coverage": 0.9945587208407797,
+      "f1": 0.9812738152050219
+    },
+    {
+      "source": "akk",
+      "budget": "full",
+      "seed": 44,
+      "target": "elx",
+      "coverage": 0.9896953912354207,
+      "f1": 0.9835589380119676
+    },
+    {
+      "source": "akk",
+      "budget": "full",
+      "seed": 45,
+      "target": "sux",
+      "coverage": 0.9945587208407797,
+      "f1": 0.9813007951016453
+    },
+    {
+      "source": "akk",
+      "budget": "full",
+      "seed": 45,
+      "target": "elx",
+      "coverage": 0.9896953912354207,
+      "f1": 0.9835589380119676
+    },
+    {
+      "source": "akk",
+      "budget": "full",
+      "seed": 46,
+      "target": "sux",
+      "coverage": 0.9945587208407797,
+      "f1": 0.9813007951016453
+    },
+    {
+      "source": "akk",
+      "budget": "full",
+      "seed": 46,
+      "target": "elx",
+      "coverage": 0.9896953912354207,
+      "f1": 0.9835589380119676
+    },
+    {
+      "source": "elx25",
+      "budget": "13K",
+      "seed": 42,
+      "target": "akk",
+      "coverage": 0.7929881066814983,
+      "f1": 0.5259299721973316
+    },
+    {
+      "source": "elx25",
+      "budget": "13K",
+      "seed": 42,
+      "target": "sux",
+      "coverage": 0.7662587433278496,
+      "f1": 0.4407030081511486
+    },
+    {
+      "source": "elx25",
+      "budget": "13K",
+      "seed": 43,
+      "target": "akk",
+      "coverage": 0.8314473610381291,
+      "f1": 0.5950687489149027
+    },
+    {
+      "source": "elx25",
+      "budget": "13K",
+      "seed": 43,
+      "target": "sux",
+      "coverage": 0.7856923058714923,
+      "f1": 0.4734067614298033
+    },
+    {
+      "source": "elx25",
+      "budget": "13K",
+      "seed": 44,
+      "target": "akk",
+      "coverage": 0.8408898507263406,
+      "f1": 0.6035904286139873
+    },
+    {
+      "source": "elx25",
+      "budget": "13K",
+      "seed": 44,
+      "target": "sux",
+      "coverage": 0.7901157492336643,
+      "f1": 0.4950679322538618
+    },
+    {
+      "source": "elx25",
+      "budget": "13K",
+      "seed": 45,
+      "target": "akk",
+      "coverage": 0.8369858901230861,
+      "f1": 0.6345516767067442
+    },
+    {
+      "source": "elx25",
+      "budget": "13K",
+      "seed": 45,
+      "target": "sux",
+      "coverage": 0.7733480880072905,
+      "f1": 0.49528060387266165
+    },
+    {
+      "source": "elx25",
+      "budget": "13K",
+      "seed": 46,
+      "target": "akk",
+      "coverage": 0.8012997911635007,
+      "f1": 0.5735580772746023
+    },
+    {
+      "source": "elx25",
+      "budget": "13K",
+      "seed": 46,
+      "target": "sux",
+      "coverage": 0.7697708685926645,
+      "f1": 0.48661169398786785
+    },
+    {
+      "source": "elx25",
+      "budget": "25K",
+      "seed": 42,
+      "target": "akk",
+      "coverage": 0.8506059289251453,
+      "f1": 0.6335694539617253
+    },
+    {
+      "source": "elx25",
+      "budget": "25K",
+      "seed": 42,
+      "target": "sux",
+      "coverage": 0.8123483602191898,
+      "f1": 0.5148095361492615
+    },
+    {
+      "source": "elx25",
+      "budget": "25K",
+      "seed": 43,
+      "target": "akk",
+      "coverage": 0.8388862654062482,
+      "f1": 0.6374876220896395
+    },
+    {
+      "source": "elx25",
+      "budget": "25K",
+      "seed": 43,
+      "target": "sux",
+      "coverage": 0.8023712023481235,
+      "f1": 0.5176769254972275
+    },
+    {
+      "source": "elx25",
+      "budget": "25K",
+      "seed": 44,
+      "target": "akk",
+      "coverage": 0.8536399763599868,
+      "f1": 0.6515863925046274
+    },
+    {
+      "source": "elx25",
+      "budget": "25K",
+      "seed": 44,
+      "target": "sux",
+      "coverage": 0.8074633401583563,
+      "f1": 0.5449304519461198
+    },
+    {
+      "source": "elx25",
+      "budget": "25K",
+      "seed": 45,
+      "target": "akk",
+      "coverage": 0.8424715854986622,
+      "f1": 0.6506065689375744
+    },
+    {
+      "source": "elx25",
+      "budget": "25K",
+      "seed": 45,
+      "target": "sux",
+      "coverage": 0.7772744487709041,
+      "f1": 0.5032347635347598
+    },
+    {
+      "source": "elx25",
+      "budget": "25K",
+      "seed": 46,
+      "target": "akk",
+      "coverage": 0.8550324927312694,
+      "f1": 0.6841736875113392
+    },
+    {
+      "source": "elx25",
+      "budget": "25K",
+      "seed": 46,
+      "target": "sux",
+      "coverage": 0.8040399796432841,
+      "f1": 0.5540829450159348
+    },
+    {
+      "source": "elx25",
+      "budget": "5K",
+      "seed": 42,
+      "target": "akk",
+      "coverage": 0.7785112607474618,
+      "f1": 0.5313957306962978
+    },
+    {
+      "source": "elx25",
+      "budget": "5K",
+      "seed": 42,
+      "target": "sux",
+      "coverage": 0.7552903790846579,
+      "f1": 0.46426000527593586
+    },
+    {
+      "source": "elx25",
+      "budget": "5K",
+      "seed": 43,
+      "target": "akk",
+      "coverage": 0.810239336703496,
+      "f1": 0.5450653049779366
+    },
+    {
+      "source": "elx25",
+      "budget": "5K",
+      "seed": 43,
+      "target": "sux",
+      "coverage": 0.7496922822008923,
+      "f1": 0.4182486715769333
+    },
+    {
+      "source": "elx25",
+      "budget": "5K",
+      "seed": 44,
+      "target": "akk",
+      "coverage": 0.7760764049159105,
+      "f1": 0.5114638245636175
+    },
+    {
+      "source": "elx25",
+      "budget": "5K",
+      "seed": 44,
+      "target": "sux",
+      "coverage": 0.7179677606428935,
+      "f1": 0.4029066611372696
+    },
+    {
+      "source": "elx25",
+      "budget": "5K",
+      "seed": 45,
+      "target": "akk",
+      "coverage": 0.7878001640711936,
+      "f1": 0.5211866630087535
+    },
+    {
+      "source": "elx25",
+      "budget": "5K",
+      "seed": 45,
+      "target": "sux",
+      "coverage": 0.7155296888499639,
+      "f1": 0.403325928927013
+    },
+    {
+      "source": "elx25",
+      "budget": "5K",
+      "seed": 46,
+      "target": "akk",
+      "coverage": 0.7675927037056909,
+      "f1": 0.4763051096469011
+    },
+    {
+      "source": "elx25",
+      "budget": "5K",
+      "seed": 46,
+      "target": "sux",
+      "coverage": 0.7280188891387452,
+      "f1": 0.38311703628223814
+    },
+    {
+      "source": "elx25",
+      "budget": "full",
+      "seed": 42,
+      "target": "akk",
+      "coverage": 0.9008057345462424,
+      "f1": 0.7830563049428212
+    },
+    {
+      "source": "elx25",
+      "budget": "full",
+      "seed": 42,
+      "target": "sux",
+      "coverage": 0.8747115145633366,
+      "f1": 0.7122889224028389
+    },
+    {
+      "source": "elx25",
+      "budget": "full",
+      "seed": 43,
+      "target": "akk",
+      "coverage": 0.9008057345462424,
+      "f1": 0.7835237581427045
+    },
+    {
+      "source": "elx25",
+      "budget": "full",
+      "seed": 43,
+      "target": "sux",
+      "coverage": 0.8747115145633366,
+      "f1": 0.7132392465644243
+    },
+    {
+      "source": "elx25",
+      "budget": "full",
+      "seed": 44,
+      "target": "akk",
+      "coverage": 0.9008057345462424,
+      "f1": 0.7827543751950533
+    },
+    {
+      "source": "elx25",
+      "budget": "full",
+      "seed": 44,
+      "target": "sux",
+      "coverage": 0.8747115145633366,
+      "f1": 0.7118861083173439
+    },
+    {
+      "source": "elx25",
+      "budget": "full",
+      "seed": 45,
+      "target": "akk",
+      "coverage": 0.9008057345462424,
+      "f1": 0.7829845804188954
+    },
+    {
+      "source": "elx25",
+      "budget": "full",
+      "seed": 45,
+      "target": "sux",
+      "coverage": 0.8747115145633366,
+      "f1": 0.7122220346497827
+    },
+    {
+      "source": "elx25",
+      "budget": "full",
+      "seed": 46,
+      "target": "akk",
+      "coverage": 0.9008057345462424,
+      "f1": 0.7833218307705753
+    },
+    {
+      "source": "elx25",
+      "budget": "full",
+      "seed": 46,
+      "target": "sux",
+      "coverage": 0.8747115145633366,
+      "f1": 0.7127537860455457
+    },
+    {
+      "source": "elx_orig",
+      "budget": "5K",
+      "seed": 42,
+      "target": "akk",
+      "coverage": 0.6806693744284027,
+      "f1": 0.26659891995009705
+    },
+    {
+      "source": "elx_orig",
+      "budget": "5K",
+      "seed": 42,
+      "target": "sux",
+      "coverage": 0.6799557359781284,
+      "f1": 0.24881949577071527
+    },
+    {
+      "source": "elx_orig",
+      "budget": "5K",
+      "seed": 43,
+      "target": "akk",
+      "coverage": 0.7214815718888624,
+      "f1": 0.25819580259336566
+    },
+    {
+      "source": "elx_orig",
+      "budget": "5K",
+      "seed": 43,
+      "target": "sux",
+      "coverage": 0.6718041731267679,
+      "f1": 0.23213313632475313
+    },
+    {
+      "source": "elx_orig",
+      "budget": "5K",
+      "seed": 44,
+      "target": "akk",
+      "coverage": 0.7011930179229144,
+      "f1": 0.27882392062546885
+    },
+    {
+      "source": "elx_orig",
+      "budget": "5K",
+      "seed": 44,
+      "target": "sux",
+      "coverage": 0.6783224645828648,
+      "f1": 0.2503647819386141
+    },
+    {
+      "source": "elx_orig",
+      "budget": "5K",
+      "seed": 45,
+      "target": "akk",
+      "coverage": 0.7094154175316992,
+      "f1": 0.27832886513663896
+    },
+    {
+      "source": "elx_orig",
+      "budget": "5K",
+      "seed": 45,
+      "target": "sux",
+      "coverage": 0.6781064703584913,
+      "f1": 0.24285269113787786
+    },
+    {
+      "source": "elx_orig",
+      "budget": "5K",
+      "seed": 46,
+      "target": "akk",
+      "coverage": 0.6857094645651683,
+      "f1": 0.2812898195432738
+    },
+    {
+      "source": "elx_orig",
+      "budget": "5K",
+      "seed": 46,
+      "target": "sux",
+      "coverage": 0.6778194643343236,
+      "f1": 0.25838851674641145
+    },
+    {
+      "source": "elx_orig",
+      "budget": "full",
+      "seed": 42,
+      "target": "akk",
+      "coverage": 0.7418561342189192,
+      "f1": 0.3037836501180821
+    },
+    {
+      "source": "elx_orig",
+      "budget": "full",
+      "seed": 42,
+      "target": "sux",
+      "coverage": 0.7170150189956565,
+      "f1": 0.26736163096685134
+    },
+    {
+      "source": "elx_orig",
+      "budget": "full",
+      "seed": 43,
+      "target": "akk",
+      "coverage": 0.7418561342189192,
+      "f1": 0.3037836501180821
+    },
+    {
+      "source": "elx_orig",
+      "budget": "full",
+      "seed": 43,
+      "target": "sux",
+      "coverage": 0.7170150189956565,
+      "f1": 0.26736163096685134
+    },
+    {
+      "source": "elx_orig",
+      "budget": "full",
+      "seed": 44,
+      "target": "akk",
+      "coverage": 0.7418561342189192,
+      "f1": 0.3037836501180821
+    },
+    {
+      "source": "elx_orig",
+      "budget": "full",
+      "seed": 44,
+      "target": "sux",
+      "coverage": 0.7170150189956565,
+      "f1": 0.26736163096685134
+    },
+    {
+      "source": "elx_orig",
+      "budget": "full",
+      "seed": 45,
+      "target": "akk",
+      "coverage": 0.7418561342189192,
+      "f1": 0.3037836501180821
+    },
+    {
+      "source": "elx_orig",
+      "budget": "full",
+      "seed": 45,
+      "target": "sux",
+      "coverage": 0.7170150189956565,
+      "f1": 0.26736163096685134
+    },
+    {
+      "source": "elx_orig",
+      "budget": "full",
+      "seed": 46,
+      "target": "akk",
+      "coverage": 0.7418561342189192,
+      "f1": 0.3037836501180821
+    },
+    {
+      "source": "elx_orig",
+      "budget": "full",
+      "seed": 46,
+      "target": "sux",
+      "coverage": 0.7170150189956565,
+      "f1": 0.26736163096685134
+    },
+    {
+      "source": "sux",
+      "budget": "13K",
+      "seed": 42,
+      "target": "akk",
+      "coverage": 0.9199737223969466,
+      "f1": 0.6041057394078854
+    },
+    {
+      "source": "sux",
+      "budget": "13K",
+      "seed": 42,
+      "target": "elx",
+      "coverage": 0.9681802740346507,
+      "f1": 0.736058942502167
+    },
+    {
+      "source": "sux",
+      "budget": "13K",
+      "seed": 43,
+      "target": "akk",
+      "coverage": 0.9213899934592686,
+      "f1": 0.6183503456300145
+    },
+    {
+      "source": "sux",
+      "budget": "13K",
+      "seed": 43,
+      "target": "elx",
+      "coverage": 0.9859585550900237,
+      "f1": 0.8639107015380622
+    },
+    {
+      "source": "sux",
+      "budget": "13K",
+      "seed": 44,
+      "target": "akk",
+      "coverage": 0.9119900983894729,
+      "f1": 0.5504323046905745
+    },
+    {
+      "source": "sux",
+      "budget": "13K",
+      "seed": 44,
+      "target": "elx",
+      "coverage": 0.9609330766617598,
+      "f1": 0.6365336658354115
+    },
+    {
+      "source": "sux",
+      "budget": "13K",
+      "seed": 45,
+      "target": "akk",
+      "coverage": 0.9340717219652666,
+      "f1": 0.6330677916881597
+    },
+    {
+      "source": "sux",
+      "budget": "13K",
+      "seed": 45,
+      "target": "elx",
+      "coverage": 0.9747480466538331,
+      "f1": 0.7151354923992069
+    },
+    {
+      "source": "sux",
+      "budget": "13K",
+      "seed": 46,
+      "target": "akk",
+      "coverage": 0.8995324011937961,
+      "f1": 0.569457862755351
+    },
+    {
+      "source": "sux",
+      "budget": "13K",
+      "seed": 46,
+      "target": "elx",
+      "coverage": 0.9539123542067716,
+      "f1": 0.6003839385698289
+    },
+    {
+      "source": "sux",
+      "budget": "25K",
+      "seed": 42,
+      "target": "akk",
+      "coverage": 0.9317978246436899,
+      "f1": 0.6545297537979287
+    },
+    {
+      "source": "sux",
+      "budget": "25K",
+      "seed": 42,
+      "target": "elx",
+      "coverage": 0.9706714981315819,
+      "f1": 0.737844466887895
+    },
+    {
+      "source": "sux",
+      "budget": "25K",
+      "seed": 43,
+      "target": "akk",
+      "coverage": 0.9335155345440308,
+      "f1": 0.6796292508884851
+    },
+    {
+      "source": "sux",
+      "budget": "25K",
+      "seed": 43,
+      "target": "elx",
+      "coverage": 0.9864115049258295,
+      "f1": 0.8379383634431455
+    },
+    {
+      "source": "sux",
+      "budget": "25K",
+      "seed": 44,
+      "target": "akk",
+      "coverage": 0.9303451024175313,
+      "f1": 0.6183702242555769
+    },
+    {
+      "source": "sux",
+      "budget": "25K",
+      "seed": 44,
+      "target": "elx",
+      "coverage": 0.9616125014154683,
+      "f1": 0.6445615122404711
+    },
+    {
+      "source": "sux",
+      "budget": "25K",
+      "seed": 45,
+      "target": "akk",
+      "coverage": 0.9449505513340921,
+      "f1": 0.7026008369838594
+    },
+    {
+      "source": "sux",
+      "budget": "25K",
+      "seed": 45,
+      "target": "elx",
+      "coverage": 0.9875438795153437,
+      "f1": 0.8290855575623788
+    },
+    {
+      "source": "sux",
+      "budget": "25K",
+      "seed": 46,
+      "target": "akk",
+      "coverage": 0.9331370977419527,
+      "f1": 0.6544847214653065
+    },
+    {
+      "source": "sux",
+      "budget": "25K",
+      "seed": 46,
+      "target": "elx",
+      "coverage": 0.9705582606726305,
+      "f1": 0.7343750000000001
+    },
+    {
+      "source": "sux",
+      "budget": "5K",
+      "seed": 42,
+      "target": "akk",
+      "coverage": 0.8867806373055955,
+      "f1": 0.5444293290863631
+    },
+    {
+      "source": "sux",
+      "budget": "5K",
+      "seed": 42,
+      "target": "elx",
+      "coverage": 0.9508549428150832,
+      "f1": 0.6713233619315162
+    },
+    {
+      "source": "sux",
+      "budget": "5K",
+      "seed": 43,
+      "target": "akk",
+      "coverage": 0.8866573586503731,
+      "f1": 0.44356604421518386
+    },
+    {
+      "source": "sux",
+      "budget": "5K",
+      "seed": 43,
+      "target": "elx",
+      "coverage": 0.917449892424414,
+      "f1": 0.49738085015027905
+    },
+    {
+      "source": "sux",
+      "budget": "5K",
+      "seed": 44,
+      "target": "akk",
+      "coverage": 0.8786106618425531,
+      "f1": 0.4513328269829875
+    },
+    {
+      "source": "sux",
+      "budget": "5K",
+      "seed": 44,
+      "target": "elx",
+      "coverage": 0.9102026950515231,
+      "f1": 0.5167415444604561
+    },
+    {
+      "source": "sux",
+      "budget": "5K",
+      "seed": 45,
+      "target": "akk",
+      "coverage": 0.8916827044961486,
+      "f1": 0.5006325642552514
+    },
+    {
+      "source": "sux",
+      "budget": "5K",
+      "seed": 45,
+      "target": "elx",
+      "coverage": 0.972030347638999,
+      "f1": 0.5972589564799231
+    },
+    {
+      "source": "sux",
+      "budget": "5K",
+      "seed": 46,
+      "target": "akk",
+      "coverage": 0.8666133141766768,
+      "f1": 0.47072939541253034
+    },
+    {
+      "source": "sux",
+      "budget": "5K",
+      "seed": 46,
+      "target": "elx",
+      "coverage": 0.9155248556222398,
+      "f1": 0.4874211117835221
+    },
+    {
+      "source": "sux",
+      "budget": "full",
+      "seed": 42,
+      "target": "akk",
+      "coverage": 0.9636074037638079,
+      "f1": 0.8568191404900226
+    },
+    {
+      "source": "sux",
+      "budget": "full",
+      "seed": 42,
+      "target": "elx",
+      "coverage": 0.9896953912354207,
+      "f1": 0.953212875433768
+    },
+    {
+      "source": "sux",
+      "budget": "full",
+      "seed": 43,
+      "target": "akk",
+      "coverage": 0.9636074037638079,
+      "f1": 0.8596670670824352
+    },
+    {
+      "source": "sux",
+      "budget": "full",
+      "seed": 43,
+      "target": "elx",
+      "coverage": 0.9896953912354207,
+      "f1": 0.953212875433768
+    },
+    {
+      "source": "sux",
+      "budget": "full",
+      "seed": 44,
+      "target": "akk",
+      "coverage": 0.9636074037638079,
+      "f1": 0.8590952272333618
+    },
+    {
+      "source": "sux",
+      "budget": "full",
+      "seed": 44,
+      "target": "elx",
+      "coverage": 0.9896953912354207,
+      "f1": 0.953212875433768
+    },
+    {
+      "source": "sux",
+      "budget": "full",
+      "seed": 45,
+      "target": "akk",
+      "coverage": 0.9636074037638079,
+      "f1": 0.8564511448907941
+    },
+    {
+      "source": "sux",
+      "budget": "full",
+      "seed": 45,
+      "target": "elx",
+      "coverage": 0.9896953912354207,
+      "f1": 0.953212875433768
+    },
+    {
+      "source": "sux",
+      "budget": "full",
+      "seed": 46,
+      "target": "akk",
+      "coverage": 0.9636074037638079,
+      "f1": 0.8594916591869526
+    },
+    {
+      "source": "sux",
+      "budget": "full",
+      "seed": 46,
+      "target": "elx",
+      "coverage": 0.9896953912354207,
+      "f1": 0.953212875433768
+    }
+  ]
+}

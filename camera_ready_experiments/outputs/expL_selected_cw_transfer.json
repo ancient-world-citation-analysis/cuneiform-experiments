@@ -1,0 +1,43 @@
+{
+  "experiment": "L: Morfessor transfer at source-selected corpusweight 0.5",
+  "corpusweight": 0.5,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "results": {
+    "akk": {
+      "f1_sux_mean": 0.9816091438054707,
+      "f1_elx_mean": 0.9965012905075996,
+      "f1_sux_std": 6.18812953383118e-06,
+      "f1_elx_std": 0.0
+    },
+    "sux": {
+      "f1_akk_mean": 0.9766605588311285,
+      "f1_elx_mean": 0.9926301243666513,
+      "f1_akk_std": 0.00010105917116591248,
+      "f1_elx_std": 0.0
+    },
+    "elx": {
+      "f1_akk_mean": 0.7652953700660969,
+      "f1_sux_mean": 0.7126382513338707,
+      "f1_akk_std": 0.0,
+      "f1_sux_std": 0.0
+    }
+  },
+  "published_cw1_reference": {
+    "akk": {
+      "sux": 0.9813,
+      "elx": 0.9836
+    },
+    "sux": {
+      "akk": 0.8565,
+      "elx": 0.9532
+    },
+    "elx": {
+      "akk": 0.3038,
+      "sux": 0.2674
+    }
+  }
+}

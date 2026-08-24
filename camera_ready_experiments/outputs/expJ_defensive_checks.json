@@ -1,0 +1,68 @@
+{
+  "experiment": "J: defensive checks",
+  "j1_corpusweight_sweep_elx_source": {
+    "sweep": [
+      {
+        "corpusweight": 0.25,
+        "lexicon_types": 142,
+        "f1_akk": 0.862724356718384,
+        "f1_sux": 0.837565158076486
+      },
+      {
+        "corpusweight": 0.5,
+        "lexicon_types": 142,
+        "f1_akk": 0.7652953700660969,
+        "f1_sux": 0.7126382513338707
+      },
+      {
+        "corpusweight": 1.0,
+        "lexicon_types": 142,
+        "f1_akk": 0.3037836501180821,
+        "f1_sux": 0.26736163096685134
+      },
+      {
+        "corpusweight": 2.0,
+        "lexicon_types": 142,
+        "f1_akk": 0.0628937472626398,
+        "f1_sux": 0.06566795578689213
+      },
+      {
+        "corpusweight": 4.0,
+        "lexicon_types": 142,
+        "f1_akk": 0.060608040098924926,
+        "f1_sux": 0.06358181365549645
+      },
+      {
+        "corpusweight": 10.0,
+        "lexicon_types": 142,
+        "f1_akk": 0.060102153022358926,
+        "f1_sux": 0.06311529831952012
+      }
+    ],
+    "oracle_best_akk": {
+      "cw": 0.25,
+      "f1": 0.862724356718384
+    },
+    "oracle_best_sux": {
+      "cw": 0.25,
+      "f1": 0.837565158076486
+    }
+  },
+  "j2_clamp_specificity_top119": {
+    "clamped_tokens": 291239,
+    "inventory": "SUX top-119 by frequency",
+    "coverage_of_akk": 0.6930988117330152,
+    "f1_akk_mean": 0.23788551341596245,
+    "f1_akk_std": 0.0
+  },
+  "j3_tp_under_elx_clamp": {
+    "src_theta": 0.55,
+    "f1_akk": 0.9613967443981982,
+    "f1_elx": 0.9947120031841701
+  },
+  "reference": {
+    "elx->akk_cw1": 0.3038,
+    "sux_clamped_elxinv->akk": 0.2825,
+    "sux_full->akk": 0.8568
+  }
+}

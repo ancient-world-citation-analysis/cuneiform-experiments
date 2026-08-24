@@ -1,0 +1,231 @@
+{
+  "experiment": "A: Morfessor Sumerian-subsample control",
+  "protocol": {
+    "subsampling": "document-level shuffled prefix to token budget (notebook 04)",
+    "morfessor_corpusweight": 1.0,
+    "eval": "zero-shot on full target corpora (Table 3 off-diagonal protocol)",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46
+    ],
+    "budgets": [
+      13000,
+      8831
+    ],
+    "elx_measured_tokens": 8831,
+    "sux_full_tokens": 337972
+  },
+  "runs": [
+    {
+      "budget": 8831,
+      "seed": 42,
+      "actual_tokens": 11170,
+      "n_train_docs": 11,
+      "lexicon_types": 423,
+      "f1_akk": 0.5918871352819194,
+      "precision_akk": 0.9629964460178042,
+      "recall_akk": 0.42724139734402017,
+      "vocab_overlap_akk": 0.916471543723171,
+      "f1_elx": 0.7387010740286888,
+      "precision_elx": 0.9998048780487805,
+      "recall_elx": 0.5857338820301783,
+      "vocab_overlap_elx": 0.9661419997735251,
+      "wall_s": 363.96917700767517
+    },
+    {
+      "budget": 8831,
+      "seed": 43,
+      "actual_tokens": 9038,
+      "n_train_docs": 18,
+      "lexicon_types": 393,
+      "f1_akk": 0.5275549228901633,
+      "precision_akk": 0.9661771704398667,
+      "recall_akk": 0.3628358014122015,
+      "vocab_overlap_akk": 0.9059609120654581,
+      "f1_elx": 0.6350444687158683,
+      "precision_elx": 1.0,
+      "recall_elx": 0.46524919981710106,
+      "vocab_overlap_elx": 0.9371532102819613,
+      "wall_s": 366.03561186790466
+    },
+    {
+      "budget": 8831,
+      "seed": 44,
+      "actual_tokens": 9387,
+      "n_train_docs": 9,
+      "lexicon_types": 374,
+      "f1_akk": 0.4513328269829875,
+      "precision_akk": 0.9629226029516622,
+      "recall_akk": 0.2947405439038843,
+      "vocab_overlap_akk": 0.8786106618425531,
+      "f1_elx": 0.5167415444604561,
+      "precision_elx": 0.9996720236142997,
+      "recall_elx": 0.3484224965706447,
+      "vocab_overlap_elx": 0.9102026950515231,
+      "wall_s": 366.85114002227783
+    },
+    {
+      "budget": 8831,
+      "seed": 45,
+      "actual_tokens": 10584,
+      "n_train_docs": 16,
+      "lexicon_types": 417,
+      "f1_akk": 0.5881824964131994,
+      "precision_akk": 0.9700121049448558,
+      "recall_akk": 0.42204951641137584,
+      "vocab_overlap_akk": 0.9254512264997504,
+      "f1_elx": 0.6952047132522933,
+      "precision_elx": 1.0,
+      "recall_elx": 0.5328074988568816,
+      "vocab_overlap_elx": 0.9744083342769788,
+      "wall_s": 242.02118396759033
+    },
+    {
+      "budget": 8831,
+      "seed": 46,
+      "actual_tokens": 9199,
+      "n_train_docs": 23,
+      "lexicon_types": 378,
+      "f1_akk": 0.5499316812199133,
+      "precision_akk": 0.9683161880988155,
+      "recall_akk": 0.38401058801098825,
+      "vocab_overlap_akk": 0.8923773244272355,
+      "f1_elx": 0.5972422639089305,
+      "precision_elx": 0.9997316156736447,
+      "recall_elx": 0.42581161408321905,
+      "vocab_overlap_elx": 0.9513078926508889,
+      "wall_s": 243.52218866348267
+    },
+    {
+      "budget": 13000,
+      "seed": 42,
+      "actual_tokens": 13479,
+      "n_train_docs": 15,
+      "lexicon_types": 444,
+      "f1_akk": 0.6041057394078854,
+      "precision_akk": 0.9647281387096075,
+      "recall_akk": 0.43973106649750227,
+      "vocab_overlap_akk": 0.9199737223969466,
+      "f1_elx": 0.736058942502167,
+      "precision_elx": 0.9998037676609105,
+      "recall_elx": 0.5824188385916781,
+      "vocab_overlap_elx": 0.9681802740346507,
+      "wall_s": 303.2166168689728
+    },
+    {
+      "budget": 13000,
+      "seed": 43,
+      "actual_tokens": 15300,
+      "n_train_docs": 22,
+      "lexicon_types": 449,
+      "f1_akk": 0.6183503456300145,
+      "precision_akk": 0.9637847574606695,
+      "recall_akk": 0.4552000550154896,
+      "vocab_overlap_akk": 0.9213899934592686,
+      "f1_elx": 0.8639107015380622,
+      "precision_elx": 0.999249361957664,
+      "recall_elx": 0.7608596250571559,
+      "vocab_overlap_elx": 0.9859585550900237,
+      "wall_s": 301.98879504203796
+    },
+    {
+      "budget": 13000,
+      "seed": 44,
+      "actual_tokens": 15155,
+      "n_train_docs": 16,
+      "lexicon_types": 446,
+      "f1_akk": 0.5504323046905745,
+      "precision_akk": 0.9685173735881626,
+      "recall_akk": 0.3844672659895973,
+      "vocab_overlap_akk": 0.9119900983894729,
+      "f1_elx": 0.6365336658354115,
+      "precision_elx": 1.0,
+      "recall_elx": 0.46684956561499774,
+      "vocab_overlap_elx": 0.9609330766617598,
+      "wall_s": 301.8713939189911
+    },
+    {
+      "budget": 13000,
+      "seed": 45,
+      "actual_tokens": 13809,
+      "n_train_docs": 21,
+      "lexicon_types": 453,
+      "f1_akk": 0.6330677916881597,
+      "precision_akk": 0.9715382275322763,
+      "recall_akk": 0.46950037617252793,
+      "vocab_overlap_akk": 0.9340717219652666,
+      "f1_elx": 0.7151354923992069,
+      "precision_elx": 1.0,
+      "recall_elx": 0.5565843621399177,
+      "vocab_overlap_elx": 0.9747480466538331,
+      "wall_s": 301.91163396835327
+    },
+    {
+      "budget": 13000,
+      "seed": 46,
+      "actual_tokens": 13133,
+      "n_train_docs": 30,
+      "lexicon_types": 414,
+      "f1_akk": 0.569457862755351,
+      "precision_akk": 0.9692563570753246,
+      "recall_akk": 0.40316182583891413,
+      "vocab_overlap_akk": 0.8995324011937961,
+      "f1_elx": 0.6003839385698289,
+      "precision_elx": 0.9997336174746937,
+      "recall_elx": 0.42901234567901236,
+      "vocab_overlap_elx": 0.9539123542067716,
+      "wall_s": 368.93051409721375
+    }
+  ],
+  "summary": {
+    "13000": {
+      "n_seeds": 5,
+      "actual_tokens_mean": 14175.2,
+      "f1_akk_mean": 0.5950828088343971,
+      "f1_akk_std": 0.03071141758018206,
+      "precision_akk_mean": 0.9675649708732081,
+      "recall_akk_mean": 0.4304121179028062,
+      "vocab_overlap_akk_mean": 0.9173915874809502,
+      "f1_elx_mean": 0.7104045481689353,
+      "f1_elx_std": 0.09143971861001443,
+      "precision_elx_mean": 0.9997573494186536,
+      "recall_elx_mean": 0.5591449474165524,
+      "vocab_overlap_elx_mean": 0.9687464613294077
+    },
+    "8831": {
+      "n_seeds": 5,
+      "actual_tokens_mean": 9875.6,
+      "f1_akk_mean": 0.5417778125576366,
+      "f1_akk_std": 0.05121212842261942,
+      "precision_akk_mean": 0.9660849024906009,
+      "recall_akk_mean": 0.378175569416494,
+      "vocab_overlap_akk_mean": 0.9037743337116335,
+      "f1_elx_mean": 0.6365868128732475,
+      "f1_elx_std": 0.07717077334821618,
+      "precision_elx_mean": 0.999841703467345,
+      "recall_elx_mean": 0.4716049382716049,
+      "vocab_overlap_elx_mean": 0.9478428264069754
+    }
+  },
+  "reference": {
+    "sux_full->akk": {
+      "reproduced": 0.8568191404900226,
+      "published": 0.8564511448907941
+    },
+    "sux_full->elx": {
+      "reproduced": 0.953212875433768,
+      "published": 0.953212875433768
+    },
+    "elx->akk": {
+      "reproduced": 0.3037836501180821,
+      "published": 0.3037836501180821
+    },
+    "elx->sux": {
+      "reproduced": 0.26736163096685134,
+      "published": 0.26736163096685134
+    }
+  }
+}

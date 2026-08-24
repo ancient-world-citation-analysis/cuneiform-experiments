@@ -1,0 +1,79 @@
+{
+  "experiment": "D: Elamite dictionary vs running-text ablation",
+  "protocol": {
+    "test": "held-out Utu-nashu folds (5-fold document-level CV, seed 42), identical across conditions",
+    "tp": "theta tuned on held-out fold, cunei-tools coarse grid",
+    "morfessor": "corpusweight=1.0, 5 seeds x 5 folds"
+  },
+  "corpus": {
+    "nasu_docs": 84,
+    "nasu_tokens": 8831,
+    "dict_entries": 15435,
+    "dict_tokens": 68251
+  },
+  "results": {
+    "dict_only": {
+      "tp_f1_mean": 0.9942846021178395,
+      "tp_f1_std": 0.00460406588477912,
+      "tp_thetas": [
+        0.25,
+        0.25,
+        0.3,
+        0.25,
+        0.25
+      ],
+      "morf_f1_mean": 0.726818906480272,
+      "morf_f1_std": 0.0,
+      "morf_seed_means": [
+        0.726818906480272,
+        0.726818906480272,
+        0.726818906480272,
+        0.726818906480272,
+        0.726818906480272
+      ],
+      "n_train_tokens_fold1": 68251
+    },
+    "utu_only": {
+      "tp_f1_mean": 0.9886204329807006,
+      "tp_f1_std": 0.005379718188178118,
+      "tp_thetas": [
+        0.9,
+        0.95,
+        0.95,
+        0.95,
+        0.95
+      ],
+      "morf_f1_mean": 0.9846270528551203,
+      "morf_f1_std": 0.0,
+      "morf_seed_means": [
+        0.9846270528551203,
+        0.9846270528551203,
+        0.9846270528551203,
+        0.9846270528551203,
+        0.9846270528551203
+      ],
+      "n_train_tokens_fold1": 6759
+    },
+    "combined": {
+      "tp_f1_mean": 0.9952854432242301,
+      "tp_f1_std": 0.0024037527471693215,
+      "tp_thetas": [
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        0.85
+      ],
+      "morf_f1_mean": 0.9913692767354249,
+      "morf_f1_std": 0.0,
+      "morf_seed_means": [
+        0.9913692767354249,
+        0.9913692767354249,
+        0.9913692767354249,
+        0.9913692767354249,
+        0.9913692767354249
+      ],
+      "n_train_tokens_fold1": 75010
+    }
+  }
+}

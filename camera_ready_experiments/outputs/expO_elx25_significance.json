@@ -1,0 +1,14 @@
+{
+  "experiment": "O: ELX-expanded in-language TP vs Morfessor significance",
+  "n_docs": 871,
+  "tp_f1_pooled": 0.9236084680250014,
+  "morf_f1_pooled": 0.9928032914689486,
+  "bootstrap": {
+    "observed_diff": -0.06919482344394723,
+    "p_two_sided": 0.0,
+    "ci95_low": -0.07714814999835896,
+    "ci95_high": -0.06215482989049427,
+    "n_docs": 871,
+    "n_resamples": 2000
+  }
+}
