@@ -61,10 +61,12 @@ applies, boundary micro-F1, document filter `len(split) > 2`.
   871-document Susa corpus of Exp C derives from CEPOAT with the same
   two-pass conversion.
 - **Hittite**: `data/7000_hitt_txts_wGloss.csv` (tracked at top level).
-- **Old Babylonian (Exp Q)**: the Iltani-archive word sheet with
-  BART-model lemma predictions; redistribution pending coauthor
-  confirmation — contact the authors for the input file. The script,
-  its full protocol, and its outputs are included.
+- **Old Babylonian (Exp Q)**: word-level sheets released with coauthor
+  approval — the Iltani-archive sheet
+  (https://docs.google.com/spreadsheets/d/1AHuRKJQwabO9iujUTZz9ztHLgHgY15MluI7sYM-5qus)
+  and the Old Babylonian atf-by-word sheet
+  (https://docs.google.com/spreadsheets/d/1Ik_DFgtHZzWhBZDHM9PyPu77pyPryN-cuv5PZn-PtIQ).
+  The script, its full protocol, and its outputs are included.
 
 ## Integrity note
 
