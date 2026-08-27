@@ -1,34 +1,43 @@
 {
-  "recall_detector": 0.9696969696969697,
+  "docs": 132,
+  "heuristic_p": 0.7442388268156425,
+  "heuristic_r": 0.6483650190114069,
+  "log_share": 0.5026758409785933,
+  "conversion": 0.9137614678899083,
   "theta": 0.02,
+  "tp_f1": 0.5666061461905723,
+  "morf_f1": 0.5512556497552887,
+  "trivial_f1": 0.5403442781391218,
+  "seen": {
+    "chars": 0.9997944219831426,
+    "bigrams": 0.985647816750179,
+    "words": 0.3544740702390198
+  },
   "boundary_totals": {
-    "within-log": 1283,
-    "switch": 2577,
-    "within-syl": 463
+    "within-log": 2623,
+    "within-syl": 2450,
+    "switch": 5270
   },
   "tp_hits": {
-    "within-log": 1055,
-    "switch": 2184,
-    "within-syl": 320
+    "within-log": 2132,
+    "within-syl": 1738,
+    "switch": 4556
   },
   "morf_hits": {
-    "within-log": 1282,
-    "switch": 2577,
-    "within-syl": 463
+    "within-log": 2598,
+    "within-syl": 2449,
+    "switch": 5259
   },
   "signs_in": {
-    "log": 2148,
-    "syl": 6009,
-    "num": 38
+    "log": 4174,
+    "syl": 13423
   },
   "tp_fp": {
-    "log": 1167,
-    "syl": 4116,
-    "num": 2
+    "log": 2127,
+    "syl": 8846
   },
   "morf_fp": {
-    "log": 1969,
-    "syl": 5781,
-    "num": 0
+    "log": 3824,
+    "syl": 12918
   }
 }
