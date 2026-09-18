@@ -2,6 +2,26 @@
 
 **Chuanjun Zhou and Adam Anderson** &middot; **EMNLP 2026 Main Conference**
 
+## Paper
+
+**Accepted to EMNLP 2026 (Main Conference), Budapest, November 2026.**
+
+* Camera-ready preprint (author version): [`paper/Zhou_Anderson_EMNLP2026_WhatTransfersAcrossCuneiform.pdf`](paper/Zhou_Anderson_EMNLP2026_WhatTransfersAcrossCuneiform.pdf)
+* The version of record will appear in the ACL Anthology (*Proceedings of EMNLP 2026*); the paper is published under the CC BY 4.0 license, which permits this preprint.
+* Companion toolkit: [`cunei-tools`](https://github.com/ancient-world-citation-analysis/cunei-tools) (`pip install cunei-tools`).
+
+```bibtex
+@inproceedings{zhou-anderson-2026-transfers,
+  title     = "What Transfers Across Cuneiform? Script-Level Substrate and Language-Specific Regularities via Segmentation and Representation",
+  author    = "Zhou, Chuanjun and Anderson, Adam",
+  booktitle = "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+  year      = "2026",
+  address   = "Budapest, Hungary",
+  publisher = "Association for Computational Linguistics",
+}
+```
+
+
 **Camera-ready experiments** (review-period controls, robustness analyses, and the Old Babylonian case study) live in [`camera_ready_experiments/`](camera_ready_experiments/) with a full experiment-to-paper index.
 
 This repository contains the code, curated data, and pre-computed result
