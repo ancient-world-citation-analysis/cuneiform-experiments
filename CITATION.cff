@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "What Transfers Across Cuneiform? Script-Level Substrate and Language-Specific Regularities via Segmentation and Representation (reproduction code)"
+authors:
+  - family-names: Zhou
+    given-names: Chuanjun
+    affiliation: "University of California, Berkeley"
+  - family-names: Anderson
+    given-names: Adam
+    orcid: "https://orcid.org/0000-0002-4135-8426"
+    affiliation: "FactGrid; TokenWorks LLC"
+repository-code: "https://github.com/ancient-world-citation-analysis/cuneiform-experiments"
+license: CC-BY-4.0
+preferred-citation:
+  type: conference-paper
+  title: "What Transfers Across Cuneiform? Script-Level Substrate and Language-Specific Regularities via Segmentation and Representation"
+  authors:
+    - family-names: Zhou
+      given-names: Chuanjun
+    - family-names: Anderson
+      given-names: Adam
+  collection-title: "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing"
+  publisher:
+    name: "Association for Computational Linguistics"
+  year: 2026
+  conference:
+    name: "EMNLP 2026"
+    city: Budapest
+    country: HU
