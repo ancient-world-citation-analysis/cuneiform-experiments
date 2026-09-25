@@ -4,7 +4,7 @@
 
 ## Paper
 
-**Accepted to EMNLP 2026 (Main Conference), Budapest, November 2026.**
+**Accepted to EMNLP 2026 (Main Conference, oral presentation), Budapest, 25–27 October 2026.**
 
 * Camera-ready preprint (author version): [`paper/Zhou_Anderson_EMNLP2026_WhatTransfersAcrossCuneiform.pdf`](paper/Zhou_Anderson_EMNLP2026_WhatTransfersAcrossCuneiform.pdf)
 * The version of record will appear in the ACL Anthology (*Proceedings of EMNLP 2026*); the paper is published under the CC BY 4.0 license, which permits this preprint.
